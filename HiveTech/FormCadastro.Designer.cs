@@ -1,6 +1,6 @@
 ﻿namespace HiveTech
 {
-    partial class frmMain
+    partial class FormCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmMain
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 515);
-            this.Name = "frmMain";
-            this.Text = "frmMain";
-            this.ResumeLayout(false);
-
+            this.Text = "FormCadastro";
         }
 
         #endregion
-
     }
 }

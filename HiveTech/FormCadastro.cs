@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace HiveTech
 {
-    public partial class frmMain : Form
+    public partial class FormCadastro : Form
     {
-        public frmMain()
+        public FormCadastro()
         {
             InitializeComponent();
         }
-
     }
 }

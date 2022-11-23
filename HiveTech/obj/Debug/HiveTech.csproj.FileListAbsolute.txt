@@ -7,3 +7,6 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.pdb
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
+D:\felipematheus\Projeto HiveTeche\HiveTech\bin\Debug\HiveTech.exe.config
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.exe
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.pdb
