@@ -7,3 +7,5 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.pdb
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmMain.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
