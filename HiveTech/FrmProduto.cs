@@ -23,14 +23,7 @@ namespace HiveTech
         {
             List<Produto> ListProduto = ProdDao.Listar();
 
-            DataGridViewImageColumn img = new DataGridViewImageColumn();
-            Image image = Image.FromFile("../image/imgTeste.png");
-            img.Image = image;
-            DgvProdutos.Columns.Add(img);
-            img.HeaderText = "Image";
-            img.Name = "img";
-
-            // this.DgvProdutos.Rows.Add(img, "a", "a", "a");
+            this.DgvProdutos.Rows.Add(1,Properties.Resources.ResourceManager.GetObject("imgTeste"), "a", "a", "Comprar");
         }
     }
 }
