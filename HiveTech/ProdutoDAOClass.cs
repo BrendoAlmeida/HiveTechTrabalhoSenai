@@ -35,17 +35,20 @@ namespace HiveTech
             List<Produto> produtos = new List<Produto>();
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = "SELECT * FROM produto";
-            DataTable tabela = new DataTable();
-            tabela.Load(comando.ExecuteReader());
-            foreach (DataRow linha in tabela.Rows)
+            comando.CommandText = @"SELECT * FROM produto";
+
+            conexao.Open();
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            while(reader.Read())
             {
                 Produto produto = new Produto();
-                produto.Id = Convert.ToInt32(linha["id"]);
-                produto.Nome = linha["nome"].ToString();
-                produto.Preco = Convert.ToDecimal(linha["preco"]);
-                produto.Quantidade = Convert.ToInt32(linha["quantidade"]);
-                produto.Imagem = linha["imagem"].ToString();
+                produto.Id = Convert.ToInt32(reader["id"]);
+                produto.Nome = reader["nome"].ToString();
+                produto.Preco = Convert.ToDecimal(reader["preco"]);
+                produto.Quantidade = Convert.ToInt32(reader["quantidade"]);
+                produto.Imagem = reader["imagem"].ToString();
                 produtos.Add(produto);
             }
             return produtos;

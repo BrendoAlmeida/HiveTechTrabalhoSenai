@@ -23,7 +23,16 @@ namespace HiveTech
         {
             List<Produto> ListProduto = ProdDao.Listar();
 
-            this.DgvProdutos.Rows.Add(1,Properties.Resources.ResourceManager.GetObject("imgTeste"), "a", "a", "Comprar");
+            MessageBox.Show(Convert.ToString(ListProduto));
+
+            this.DgvProdutos.Rows.Add(1,Properties.Resources.ResourceManager.GetObject("imgTeste"), "a", "a", "Comprar"); 
+        }
+
+        private void DgvProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow teste = DgvProdutos.Rows[DgvProdutos.SelectedCells[0].RowIndex];
+
+            MessageBox.Show(Convert.ToString(teste.Cells["id"].Value));
         }
     }
 }

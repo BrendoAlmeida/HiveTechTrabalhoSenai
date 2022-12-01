@@ -57,6 +57,7 @@
             this.DgvProdutos.RowTemplate.Height = 120;
             this.DgvProdutos.Size = new System.Drawing.Size(664, 392);
             this.DgvProdutos.TabIndex = 0;
+            this.DgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProdutos_CellContentClick);
             // 
             // id
             // 
