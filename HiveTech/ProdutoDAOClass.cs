@@ -37,7 +37,7 @@ namespace HiveTech
             comando.Connection = conexao;
             comando.CommandText = @"SELECT * FROM produto";
 
-            conexao.Open();
+            //conexao.Open();
 
             MySqlDataReader reader = comando.ExecuteReader();
 
@@ -51,6 +51,7 @@ namespace HiveTech
                 produto.Imagem = reader["imagem"].ToString();
                 produtos.Add(produto);
             }
+            reader.Close();
             return produtos;
         }
 
@@ -73,6 +74,16 @@ namespace HiveTech
             comando.Connection = conexao;
             comando.CommandText = "DELETE FROM produto WHERE id = @ID";
             comando.Parameters.AddWithValue("@ID", id);
+            comando.ExecuteNonQuery();
+        }
+
+        public void Comprar(int produto, string UserId)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "INSERT INTO (id_cliente, date_time_pedido) VALUES (@id_cliente, @date)";
+            comando.Parameters.AddWithValue("@id_cliente", UserId);
+            comando.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
             comando.ExecuteNonQuery();
         }
     }

@@ -69,12 +69,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
     <Compile Include="FrmProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmProduto.Designer.cs">
       <DependentUpon>FrmProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginInfo.cs" />
     <Compile Include="VendaClass.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -126,6 +128,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="image\imgTeste.png" />
+    <None Include="Resources\geladeira.png" />
+    <None Include="Resources\frigobar.png" />
+    <None Include="Resources\freezer2.png" />
+    <None Include="Resources\freezer.png" />
+    <None Include="Resources\maquina.png" />
+    <None Include="Resources\vitrine.png" />
+    <None Include="Resources\HiveTech.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

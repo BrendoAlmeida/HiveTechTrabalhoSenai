@@ -23,16 +23,23 @@ namespace HiveTech
         {
             List<Produto> ListProduto = ProdDao.Listar();
 
-            MessageBox.Show(Convert.ToString(ListProduto));
+            foreach(Produto produto in ListProduto)
+            {
+                string Image = produto.Imagem;
 
-            this.DgvProdutos.Rows.Add(1,Properties.Resources.ResourceManager.GetObject("imgTeste"), "a", "a", "Comprar"); 
+                this.DgvProdutos.Rows.Add(produto.Id, Properties.Resources.ResourceManager.GetObject(Image.Replace("img/", "").Replace(".png", "")), produto.Nome, "R$" + produto.Preco, "Comprar"); 
+            }
         }
+
 
         private void DgvProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow teste = DgvProdutos.Rows[DgvProdutos.SelectedCells[0].RowIndex];
+            int IdProduto = (int)DgvProdutos.Rows[DgvProdutos.SelectedCells[0].RowIndex].Cells[0].Value;
 
-            MessageBox.Show(Convert.ToString(teste.Cells["id"].Value));
+            if (MessageBox.Show("Deseja confirmar a compra?", "Aviso!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                ProdDao.Comprar(IdProduto, LoginInfo.id);
+            }
         }
     }
 }
