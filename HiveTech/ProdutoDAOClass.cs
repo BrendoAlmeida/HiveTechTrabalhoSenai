@@ -22,10 +22,9 @@ namespace HiveTech
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = @"INSERT INTO produto (nome, preco, quantidade, imagem) VALUES (@NOME, @PRECO, @QUANTIDADE, @IMAGEM)";
+            comando.CommandText = @"INSERT INTO produto (nome, preco, imagem) VALUES (@NOME, @PRECO, @IMAGEM)";
             comando.Parameters.AddWithValue("@NOME", produto.Nome);
             comando.Parameters.AddWithValue("@PRECO", produto.Preco);
-            comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
             comando.Parameters.AddWithValue("@IMAGEM", produto.Imagem);
             comando.ExecuteNonQuery();
         }
@@ -37,18 +36,11 @@ namespace HiveTech
             comando.Connection = conexao;
             comando.CommandText = @"SELECT * FROM produto";
 
-            //conexao.Open();
-
             MySqlDataReader reader = comando.ExecuteReader();
 
             while(reader.Read())
             {
-                Produto produto = new Produto();
-                produto.Id = Convert.ToInt32(reader["id"]);
-                produto.Nome = reader["nome"].ToString();
-                produto.Preco = Convert.ToDecimal(reader["preco"]);
-                produto.Quantidade = Convert.ToInt32(reader["quantidade"]);
-                produto.Imagem = reader["imagem"].ToString();
+                Produto produto = new Produto(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString());
                 produtos.Add(produto);
             }
             reader.Close();
@@ -62,7 +54,6 @@ namespace HiveTech
             comando.CommandText = @"UPDATE produto SET nome = @NOME, preco = @PRECO, quantidade = @QUANTIDADE, imagem = @IMAGEM WHERE id = @ID";
             comando.Parameters.AddWithValue("@NOME", produto.Nome);
             comando.Parameters.AddWithValue("@PRECO", produto.Preco);
-            comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
             comando.Parameters.AddWithValue("@IMAGEM", produto.Imagem);
             comando.Parameters.AddWithValue("@ID", produto.Id);
             comando.ExecuteNonQuery();
@@ -77,14 +68,40 @@ namespace HiveTech
             comando.ExecuteNonQuery();
         }
 
-        public void Comprar(int produto, string UserId)
+        public void Comprar(Produto produto, string UserId)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = "INSERT INTO (id_cliente, date_time_pedido) VALUES (@id_cliente, @date)";
+            comando.CommandText = "INSERT INTO pedidos (id_cliente, date_time_pedido) VALUES (@id_cliente, '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')";
             comando.Parameters.AddWithValue("@id_cliente", UserId);
-            comando.Parameters.AddWithValue("@date", DateTime.Now.ToString("yyyy-MM-dd"));
             comando.ExecuteNonQuery();
+        }
+
+        public void AdicionarCarrinho(int IdProduto)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM produto Where id = @id";
+            comando.Parameters.AddWithValue("@id", IdProduto);
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            reader.Read();
+
+            ItensCarrinho produto = new ItensCarrinho(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString(), 1, Convert.ToDecimal(reader["preco"]));
+            
+            reader.Close();
+
+            int id = produto.getId();
+            
+            if (Carrinho.VerifcarSeExiste(id))
+            {
+                Carrinho.AdicionarQuantidade(id);
+            }
+            else
+            {
+                Carrinho.Adicionar(produto);
+            }
         }
     }
 }

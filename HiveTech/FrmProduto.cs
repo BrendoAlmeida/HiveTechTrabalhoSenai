@@ -35,11 +35,13 @@ namespace HiveTech
         private void DgvProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int IdProduto = (int)DgvProdutos.Rows[DgvProdutos.SelectedCells[0].RowIndex].Cells[0].Value;
-
+            LoginInfo.id = "1";
             if (MessageBox.Show("Deseja confirmar a compra?", "Aviso!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                ProdDao.Comprar(IdProduto, LoginInfo.id);
+                ProdDao.AdicionarCarrinho(IdProduto);
             }
+
+            MessageBox.Show("Produto adicionado ao carrinho!");
         }
     }
 }

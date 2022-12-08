@@ -69,13 +69,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrinho.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="FrmCarrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarrinho.Designer.cs">
+      <DependentUpon>FrmCarrinho.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmProduto.Designer.cs">
       <DependentUpon>FrmProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItensCarrinho.cs" />
     <Compile Include="LoginInfo.cs" />
     <Compile Include="VendaClass.cs" />
     <Compile Include="FrmLogin.cs">
@@ -94,6 +102,9 @@
     <Compile Include="ProdutosClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCarrinho.resx">
+      <DependentUpon>FrmCarrinho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
