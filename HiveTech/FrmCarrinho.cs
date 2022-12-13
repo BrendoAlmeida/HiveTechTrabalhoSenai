@@ -28,11 +28,11 @@ namespace HiveTech
 
             if (Carrinho.GetQuantidade() == 0)
             {
-                ProdutoDAO Debug = new ProdutoDAO();
-                Debug.AdicionarCarrinho(6);
+                //ProdutoDAO Debug = new ProdutoDAO();
+                //Debug.AdicionarCarrinho(6);
 
-                //MessageBox.Show("Carrinho vazio!");
-                //return;
+                MessageBox.Show("Carrinho vazio!");
+                return;
             }
 
             foreach (ItensCarrinho item in Carrinho.GetProdutos())
@@ -69,6 +69,27 @@ namespace HiveTech
         private void BtnAtualizar_Click(object sender, EventArgs e)
         {
             AtualizarCarrinho();
+        }
+
+        private void BtnComprar_Click(object sender, EventArgs e)
+        {
+            if (Carrinho.GetQuantidade() == 0)
+            {
+                MessageBox.Show("Carrinho vazio!");
+                return;
+            }
+
+            if (LoginInfo.IsLogin)
+            {
+                Carrinho.Comprar(LoginInfo.Id);
+                MessageBox.Show("Compra realizada com sucesso!");
+                AtualizarCarrinho();
+                return;
+            }
+
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
         }
     }
 }

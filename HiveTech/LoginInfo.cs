@@ -9,6 +9,7 @@ namespace HiveTech
     public static class LoginInfo
     {
         //public static Cliente cliente { get; set; }
-        public static string id { get; set; }
+        public static string Id { get; set; }
+        public static bool IsLogin { get; set; }
     }
 }

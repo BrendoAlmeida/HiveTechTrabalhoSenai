@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -86,7 +87,31 @@ namespace HiveTech
             }
             return Produtos;
         }
-    
+
+        public static void Comprar(string UserId)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = new MySqlConnection("Server=localhost;Database=HiveTechDB;Uid=root;Pwd=;");
+            comando.Connection.Open();
+            comando.CommandText = "INSERT INTO pedidos (id_cliente, date_time_pedido) VALUES (@id_cliente, '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')";
+            comando.Parameters.AddWithValue("@id_cliente", UserId);
+            comando.ExecuteNonQuery();
+
+            string idPedido = comando.LastInsertedId.ToString();
+
+            foreach (ItensCarrinho item in Produtos)
+            {
+                comando.CommandText = "INSERT INTO itenspedidos (id_pedido, id_produto, produto, quantidade) VALUES (@id_pedido, @id_produto, @nomeProduto, @quantidade)";
+                comando.Parameters.AddWithValue("@id_pedido", idPedido);
+                comando.Parameters.AddWithValue("@id_produto", item.Id);
+                comando.Parameters.AddWithValue("@nomeProduto", item.Nome);
+                comando.Parameters.AddWithValue("@quantidade", item.Quantidade);
+                comando.ExecuteNonQuery();
+                comando.Parameters.Clear();
+            }
+            comando.Connection.Close();
+        }
+
         public static int GetId(int index)
         {
             return Produtos[index].Id;

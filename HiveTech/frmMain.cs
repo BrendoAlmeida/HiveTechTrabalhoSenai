@@ -30,5 +30,12 @@ namespace HiveTech
             frmCarrinho.MdiParent = this;
             frmCarrinho.Show();
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.MdiParent = this;
+            frmLogin.Show();
+        }
     }
 }

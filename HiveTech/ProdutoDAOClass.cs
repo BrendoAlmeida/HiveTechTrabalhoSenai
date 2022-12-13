@@ -68,15 +68,6 @@ namespace HiveTech
             comando.ExecuteNonQuery();
         }
 
-        public void Comprar(Produto produto, string UserId)
-        {
-            MySqlCommand comando = new MySqlCommand();
-            comando.Connection = conexao;
-            comando.CommandText = "INSERT INTO pedidos (id_cliente, date_time_pedido) VALUES (@id_cliente, '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')";
-            comando.Parameters.AddWithValue("@id_cliente", UserId);
-            comando.ExecuteNonQuery();
-        }
-
         public void AdicionarCarrinho(int IdProduto)
         {
             MySqlCommand comando = new MySqlCommand();

@@ -36,7 +36,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DgvProdutos = new System.Windows.Forms.DataGridView();
-            this.BtnComprar = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Img = new System.Windows.Forms.DataGridViewImageColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@
             this.Adicionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Subtrair = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Remover = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.BtnComprar = new System.Windows.Forms.Button();
             this.BtnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProdutos)).BeginInit();
             this.SuspendLayout();
@@ -73,15 +73,6 @@
             this.DgvProdutos.Size = new System.Drawing.Size(1090, 462);
             this.DgvProdutos.TabIndex = 1;
             this.DgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProdutos_CellContentClick);
-            // 
-            // BtnComprar
-            // 
-            this.BtnComprar.Location = new System.Drawing.Point(1168, 12);
-            this.BtnComprar.Name = "BtnComprar";
-            this.BtnComprar.Size = new System.Drawing.Size(75, 23);
-            this.BtnComprar.TabIndex = 2;
-            this.BtnComprar.Text = "Comprar";
-            this.BtnComprar.UseVisualStyleBackColor = true;
             // 
             // id
             // 
@@ -172,9 +163,20 @@
             this.Remover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Remover.Width = 125;
             // 
+            // BtnComprar
+            // 
+            this.BtnComprar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnComprar.Location = new System.Drawing.Point(1049, 12);
+            this.BtnComprar.Name = "BtnComprar";
+            this.BtnComprar.Size = new System.Drawing.Size(75, 23);
+            this.BtnComprar.TabIndex = 2;
+            this.BtnComprar.Text = "Comprar";
+            this.BtnComprar.UseVisualStyleBackColor = true;
+            this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
+            // 
             // BtnAtualizar
             // 
-            this.BtnAtualizar.Location = new System.Drawing.Point(1168, 68);
+            this.BtnAtualizar.Location = new System.Drawing.Point(1168, 12);
             this.BtnAtualizar.Name = "BtnAtualizar";
             this.BtnAtualizar.Size = new System.Drawing.Size(75, 23);
             this.BtnAtualizar.TabIndex = 3;

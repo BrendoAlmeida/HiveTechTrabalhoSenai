@@ -22,9 +22,11 @@ namespace HiveTech
         private void btnLogin_Click(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection("Server=localhost;Database=HiveTechDB;Uid=root;Pwd=;");
-            MySqlCommand sql = new MySqlCommand();
-            sql.Connection = conn;
-            sql.CommandText = @"SELECT * FROM cliente where email = @email and senha = SHA2( @senha , 256)";
+            MySqlCommand sql = new MySqlCommand
+            {
+                Connection = conn,
+                CommandText = @"SELECT * FROM cliente where email = @email and senha = SHA2( @senha , 256)"
+            };
             sql.Parameters.AddWithValue("@email", txtEmail.Text);
             sql.Parameters.AddWithValue("@senha", txtSenha.Text);
 
@@ -34,10 +36,26 @@ namespace HiveTech
 
             if (Reader.HasRows)
             {
-                frmMain Main = new frmMain();
-                Main.Show();
+                Reader.Read();
+
+                LoginInfo.Id = Convert.ToString(Reader["id"]);
+                LoginInfo.IsLogin = true;
+
+                if (!Application.OpenForms.OfType<frmMain>().Any())
+                {
+                    frmMain Main = new frmMain();
+                    Main.Show();
+                }
                 this.Hide();
+
+                
             }
+            else
+            {
+                MessageBox.Show("Usuário não encontrado!");
+            }
+            Reader.Close();
+            conn.Close();
         }
     }
 }

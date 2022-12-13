@@ -36,3 +36,4 @@ C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Deb
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe.config
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.CopyComplete
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmCarrinho.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmCarrinho.resources
