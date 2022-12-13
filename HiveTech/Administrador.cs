@@ -9,7 +9,6 @@ namespace HiveTech
 {
     class Administrador : Cliente
     {
-        public int Id { get; set; }
         public string Chave { get; set; }
     }
         

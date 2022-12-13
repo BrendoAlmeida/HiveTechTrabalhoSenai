@@ -85,7 +85,6 @@
     <Compile Include="frmAdministrador.Designer.cs">
       <DependentUpon>frmAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="VendaClass.cs" />
     <Compile Include="FormCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,7 +92,6 @@
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Carrinho.cs" />
-    <Compile Include="Cliente.cs" />
     <Compile Include="FrmCarrinho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +131,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdministrador.resx">
       <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCarrinho.resx">
       <DependentUpon>FrmCarrinho.cs</DependentUpon>
     </EmbeddedResource>
