@@ -17,5 +17,25 @@ namespace HiveTech
             InitializeComponent();
         }
 
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProduto frmProduto = new FrmProduto();
+            frmProduto.MdiParent = this;
+            frmProduto.Show();
+        }
+
+        private void carrinhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCarrinho frmCarrinho = new FrmCarrinho();
+            frmCarrinho.MdiParent = this;
+            frmCarrinho.Show();
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.MdiParent = this;
+            frmLogin.Show();
+        }
     }
 }
