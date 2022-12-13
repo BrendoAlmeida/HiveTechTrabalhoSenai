@@ -7,54 +7,50 @@ using MySql.Data.MySqlClient;
 
 namespace HiveTech
 {
-    class Cliente
-    {
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public string Senha { get; set; }
-
-    }
-
     public class ClienteDAO
     {
         public MySqlConnection conexao { get; set; }
 
-        public ClienteDAO() 
+        public ClienteDAO()
         {
-            conexao = new MySqlConnection("Server=localhost;Database=HiveTechDB;Uid=root;Pwd=;");
+            conexao = new MySqlConnection("Server=localhost;Database=hivetechdb;Uid=root;Pwd=;");
             conexao.Open();
         }
 
-        public void Inserir(Cliente cliente) 
+        internal void Inserir(Cliente cliente)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = @"INSERT INTO cliente (nome, email, senha) VALUES (@Nome, @Email, @Senha)";
-            comando.Parameters.AddWithValue("@Nome",cliente.Nome);
-            comando.Parameters.AddWithValue("@Email",cliente.Email);
-            comando.Parameters.AddWithValue("@Senha",cliente.Senha);
+            comando.CommandText = @"INSERT INTO cliente (nome, email, senha, cpf, data_de_nascimento) VALUES (@nome, @email,sha2( @senha, 256), @cpf, @data_de_nascimento)";
+            comando.Parameters.AddWithValue("@nome", cliente.Nome);
+            comando.Parameters.AddWithValue("@email", cliente.Email);
+            comando.Parameters.AddWithValue("@senha", cliente.Senha);
+            comando.Parameters.AddWithValue("@cpf", cliente.Cpf);
+            comando.Parameters.AddWithValue("@data_de_nascimento", DateTime.Parse(cliente.Data_Nascimento).ToString("yyyy-MM-dd"));
             comando.ExecuteNonQuery();
         }
 
-        public void Alterar(Cliente cliente) 
+
+        internal void Alterar(Cliente cliente)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
             comando.CommandText = @"UPDATE cliente SET nome = @Nome, email = @Email, senha = @Senha WHERE id = @ID";
-            comando.Parameters.AddWithValue("@Nome",cliente.Nome);
-            comando.Parameters.AddWithValue("@Email",cliente.Email);
+            comando.Parameters.AddWithValue("@Nome", cliente.Nome);
+            comando.Parameters.AddWithValue("@Email", cliente.Email);
             comando.Parameters.AddWithValue("@Senha", cliente.Senha);
             comando.ExecuteNonQuery();
         }
 
-        public void Apagar(int id)
+        internal void Apagar(int id)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
             comando.CommandText = @"DELETE FROM cliente WHERE id = @ID";
-            comando.Parameters.AddWithValue("@ID",id);
+            comando.Parameters.AddWithValue("@ID", id);
             comando.ExecuteNonQuery();
-            
+
         }
     }
+
 }

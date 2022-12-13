@@ -69,7 +69,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteClass.cs" />
+    <Compile Include="Administrador.cs" />
+    <Compile Include="AdministradorDAOClass.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteDAO.cs" />
+    <Compile Include="FormProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduto.Designer.cs">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrador.Designer.cs">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="VendaClass.cs" />
     <Compile Include="FormCadastro.cs">
       <SubType>Form</SubType>
@@ -95,6 +110,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduto.resx">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrador.resx">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

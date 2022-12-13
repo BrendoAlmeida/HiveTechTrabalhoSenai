@@ -10,3 +10,16 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
 D:\felipematheus\Projeto HiveTeche\HiveTech\bin\Debug\HiveTech.exe.config
 D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.exe
 D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.pdb
+D:\Felipe Matheus\Projeto HiveTeche\HiveTech\bin\Debug\HiveTech.exe.config
+D:\Felipe Matheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.exe
+D:\Felipe Matheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.pdb
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.csprojResolveAssemblyReference.cache
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.FormCadastro.resources
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.FormProduto.resources
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.frmAdministrador.resources
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.FrmLogin.resources
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.frmMain.resources
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.Properties.Resources.resources
+D:\felipematheus\Projeto HiveTeche\HiveTech\obj\Debug\HiveTech.csproj.GenerateResource.Cache
+D:\felipematheus\Projeto HiveTeche\HiveTech\bin\Debug\HiveTech.exe
+D:\felipematheus\Projeto HiveTeche\HiveTech\bin\Debug\HiveTech.pdb

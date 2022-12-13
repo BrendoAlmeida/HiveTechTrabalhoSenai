@@ -18,17 +18,17 @@ namespace HiveTech
             conexao.Open();
         }
 
-        public void Inserir(Produto produto)
-        {
-            MySqlCommand comando = new MySqlCommand();
-            comando.Connection = conexao;
-            comando.CommandText = @"INSERT INTO produto (nome, preco, quantidade, imagem) VALUES (@NOME, @PRECO, @QUANTIDADE, @IMAGEM)";
-            comando.Parameters.AddWithValue("@NOME", produto.Nome);
-            comando.Parameters.AddWithValue("@PRECO", produto.Preco);
-            comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
-            comando.Parameters.AddWithValue("@IMAGEM", produto.Imagem);
-            comando.ExecuteNonQuery();
-        }
+            public void Inserir(Produto produto)
+            {
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = conexao;
+                comando.CommandText = @"INSERT INTO produto (nome, preco, quantidade, imagem) VALUES (@NOME, @PRECO, @QUANTIDADE, @IMAGEM)";
+                comando.Parameters.AddWithValue("@NOME", produto.Nome);
+                comando.Parameters.AddWithValue("@PRECO", produto.Preco);
+                comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
+                comando.Parameters.AddWithValue("@IMAGEM", produto.Imagem);
+                comando.ExecuteNonQuery();
+            }
 
         public List<Produto> Listar()
         {
