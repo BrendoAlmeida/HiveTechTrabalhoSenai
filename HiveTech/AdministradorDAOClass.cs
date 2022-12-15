@@ -77,7 +77,6 @@ namespace HiveTech
             comando.Parameters.AddWithValue("@id", id);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            reader.Close();
             return reader.HasRows;
         }
 

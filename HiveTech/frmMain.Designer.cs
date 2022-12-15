@@ -33,6 +33,7 @@
             this.carrinhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,10 +73,20 @@
             // 
             // administradorToolStripMenuItem
             // 
+            this.administradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroProdutosToolStripMenuItem});
+            this.administradorToolStripMenuItem.Enabled = false;
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
             this.administradorToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.administradorToolStripMenuItem.Text = "Administrador";
             this.administradorToolStripMenuItem.Visible = false;
+            // 
+            // cadastroProdutosToolStripMenuItem
+            // 
+            this.cadastroProdutosToolStripMenuItem.Name = "cadastroProdutosToolStripMenuItem";
+            this.cadastroProdutosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.cadastroProdutosToolStripMenuItem.Text = "Cadastro Produtos";
+            this.cadastroProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadastroProdutosToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -89,7 +100,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Activated += new System.EventHandler(this.frmMain_Activated);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
@@ -104,5 +114,6 @@
         private System.Windows.Forms.ToolStripMenuItem carrinhoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroProdutosToolStripMenuItem;
     }
 }

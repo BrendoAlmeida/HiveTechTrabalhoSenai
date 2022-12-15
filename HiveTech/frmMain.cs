@@ -38,16 +38,17 @@ namespace HiveTech
             frmLogin.Show();
         }
 
-        private void frmMain_Activated(object sender, EventArgs e)
+        public void verifIdAdmin()
         {
-            if (LoginInfo.IsAdmin)
-            {
-                administradorToolStripMenuItem.Visible = true;
-            }
-            else
-            {
-                administradorToolStripMenuItem.Visible = false;
-            }
+            administradorToolStripMenuItem.Visible = LoginInfo.IsAdmin;
+            administradorToolStripMenuItem.Enabled = LoginInfo.IsAdmin;
+        }
+
+        private void cadastroProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProduto FormProduto = new FormProduto();
+            FormProduto.MdiParent = this;
+            FormProduto.Show();
         }
     }
 }
