@@ -16,6 +16,16 @@ namespace HiveTech
         public string Cpf { get; set; }
         public string Data_Nascimento { get; set; }
 
+        public Cliente (string nome, string email, string senha, string cpf, string dt, int id = 0)
+        {
+            Id = id;
+            Nome = nome;
+            Email = email;
+            Senha = senha;
+            Cpf = cpf;
+            Data_Nascimento = dt;
+
+        }
     }
 
 }

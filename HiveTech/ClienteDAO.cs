@@ -30,15 +30,35 @@ namespace HiveTech
             comando.ExecuteNonQuery();
         }
 
+        public List<Cliente> Listar() 
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = @"SELECT * FROM cliente";
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            while(reader.Read())
+            {
+                Cliente cliente = new Cliente (reader["nome"].ToString(), reader["email"].ToString(), reader["senha"].ToString() , reader["cpf"].ToString(), reader["dt"].ToString());
+                clientes.Add(cliente);
+
+            }
+            reader.Close();
+            return clientes;
+        }
 
         internal void Alterar(Cliente cliente)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = @"UPDATE cliente SET nome = @Nome, email = @Email, senha = @Senha WHERE id = @ID";
+            comando.CommandText = @"UPDATE cliente SET nome = @Nome, email = @Email, senha = @Senha, cpf = @Cpf, data_de_nascimento = @Data_de_nascimento WHERE id = @ID";
             comando.Parameters.AddWithValue("@Nome", cliente.Nome);
             comando.Parameters.AddWithValue("@Email", cliente.Email);
             comando.Parameters.AddWithValue("@Senha", cliente.Senha);
+            comando.Parameters.AddWithValue("@Cpf", cliente.Cpf);
+            comando.Parameters.AddWithValue("@Data_de_nascimento", cliente.Data_Nascimento);
             comando.ExecuteNonQuery();
         }
 
