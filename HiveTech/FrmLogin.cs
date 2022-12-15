@@ -45,11 +45,13 @@ namespace HiveTech
 
                 LoginInfo.IsAdmin = AdmDAO.IsAdmin(int.Parse(LoginInfo.Id));
 
+                frmMain Main = new frmMain();
+
                 if (!Application.OpenForms.OfType<frmMain>().Any())
                 {
-                    frmMain Main = new frmMain();
                     Main.Show();
                 }
+                Application.OpenForms.OfType<frmMain>().First().verifIdAdmin();
                 this.Hide();
             }
             else

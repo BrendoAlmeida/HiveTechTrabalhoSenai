@@ -16,5 +16,23 @@ namespace HiveTech
         {
             InitializeComponent();
         }
+
+        private void btnLocaliza_Click(object sender, EventArgs e)
+        {
+            if (link.ShowDialog() == DialogResult.OK) 
+            {
+                string filePath = link.FileName;
+                txtLink.Text = filePath;
+            }
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Produto produto = new Produto(0, txtDescricao.Text, Decimal.Parse(txtPreco.Text), txtLink.Text);
+
+            ProdutoDAO ProdutoDAO = new ProdutoDAO();
+
+            ProdutoDAO.Inserir(produto);
+        }
     }
 }
