@@ -37,5 +37,17 @@ namespace HiveTech
             frmLogin.MdiParent = this;
             frmLogin.Show();
         }
+
+        private void frmMain_Activated(object sender, EventArgs e)
+        {
+            if (LoginInfo.IsAdmin)
+            {
+                administradorToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                administradorToolStripMenuItem.Visible = false;
+            }
+        }
     }
 }

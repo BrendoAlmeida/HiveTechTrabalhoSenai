@@ -41,14 +41,16 @@ namespace HiveTech
                 LoginInfo.Id = Convert.ToString(Reader["id"]);
                 LoginInfo.IsLogin = true;
 
+                AdministradorDAO AdmDAO = new AdministradorDAO();
+
+                LoginInfo.IsAdmin = AdmDAO.IsAdmin(int.Parse(LoginInfo.Id));
+
                 if (!Application.OpenForms.OfType<frmMain>().Any())
                 {
                     frmMain Main = new frmMain();
                     Main.Show();
                 }
                 this.Hide();
-
-                
             }
             else
             {

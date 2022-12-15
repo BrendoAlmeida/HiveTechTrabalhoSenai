@@ -28,24 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carrinhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produtosToolStripMenuItem,
             this.carrinhoToolStripMenuItem,
-            this.loginToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1083, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.loginToolStripMenuItem,
+            this.administradorToolStripMenuItem});
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(1083, 24);
+            this.menu.TabIndex = 1;
+            this.menu.Text = "menuStrip1";
             // 
             // produtosToolStripMenuItem
             // 
@@ -68,20 +70,28 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
+            // administradorToolStripMenuItem
+            // 
+            this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.administradorToolStripMenuItem.Text = "Administrador";
+            this.administradorToolStripMenuItem.Visible = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 520);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menu);
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menu;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Activated += new System.EventHandler(this.frmMain_Activated);
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,9 +99,10 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carrinhoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
     }
 }
