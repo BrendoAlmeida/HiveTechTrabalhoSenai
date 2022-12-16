@@ -98,11 +98,23 @@
     <Compile Include="FrmAlterarCliente.Designer.cs">
       <DependentUpon>FrmAlterarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlterarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarProduto.Designer.cs">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCarrinho.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCarrinho.Designer.cs">
       <DependentUpon>FrmCarrinho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGerenciarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGerenciarProdutos.Designer.cs">
+      <DependentUpon>frmGerenciarProdutos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmProduto.cs">
       <SubType>Form</SubType>
@@ -141,8 +153,14 @@
     <EmbeddedResource Include="FrmAlterarCliente.resx">
       <DependentUpon>FrmAlterarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarProduto.resx">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCarrinho.resx">
       <DependentUpon>FrmCarrinho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGerenciarProdutos.resx">
+      <DependentUpon>frmGerenciarProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

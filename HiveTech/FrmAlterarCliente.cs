@@ -16,7 +16,7 @@ namespace HiveTech
         private void btn_alterar_Click(object sender, EventArgs e)
         {
             Cliente cliente = new Cliente(txt_nome.Text, txt_email.Text, txt_senha.Text, txt_cpf.Text, txt_data_de_nascimento.Text, Convert.ToInt32(LoginInfo.Id));
-            cliente.Nome
+            //cliente.Nome
 
         }
     }

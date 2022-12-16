@@ -34,6 +34,7 @@
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerenciarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,8 @@
             // administradorToolStripMenuItem
             // 
             this.administradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroProdutosToolStripMenuItem});
+            this.cadastroProdutosToolStripMenuItem,
+            this.gerenciarEstoqueToolStripMenuItem});
             this.administradorToolStripMenuItem.Enabled = false;
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
             this.administradorToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
@@ -84,9 +86,16 @@
             // cadastroProdutosToolStripMenuItem
             // 
             this.cadastroProdutosToolStripMenuItem.Name = "cadastroProdutosToolStripMenuItem";
-            this.cadastroProdutosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.cadastroProdutosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastroProdutosToolStripMenuItem.Text = "Cadastro Produtos";
             this.cadastroProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadastroProdutosToolStripMenuItem_Click);
+            // 
+            // gerenciarEstoqueToolStripMenuItem
+            // 
+            this.gerenciarEstoqueToolStripMenuItem.Name = "gerenciarEstoqueToolStripMenuItem";
+            this.gerenciarEstoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gerenciarEstoqueToolStripMenuItem.Text = "Gerenciar Produtos";
+            this.gerenciarEstoqueToolStripMenuItem.Click += new System.EventHandler(this.gerenciarEstoqueToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -115,5 +124,6 @@
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerenciarEstoqueToolStripMenuItem;
     }
 }

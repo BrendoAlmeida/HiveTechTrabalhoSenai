@@ -30,7 +30,7 @@ namespace HiveTech
             comando.ExecuteNonQuery();
         }
 
-        public List<Cliente> Listar() 
+        internal List<Cliente> Listar()
         {
             List<Cliente> clientes = new List<Cliente>();
             MySqlCommand comando = new MySqlCommand();

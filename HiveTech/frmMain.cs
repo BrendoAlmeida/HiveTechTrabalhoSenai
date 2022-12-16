@@ -50,5 +50,12 @@ namespace HiveTech
             FormProduto.MdiParent = this;
             FormProduto.Show();
         }
+
+        private void gerenciarEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGerenciarProdutos frmGerenciarProdutos = new frmGerenciarProdutos();
+            frmGerenciarProdutos.MdiParent = this;
+            frmGerenciarProdutos.Show();
+        }
     }
 }

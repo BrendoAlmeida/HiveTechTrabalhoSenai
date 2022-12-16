@@ -41,7 +41,7 @@ namespace HiveTech
 
             while(reader.Read())
             {
-                Produto produto = new Produto(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString());
+                Produto produto = new Produto(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString(), int.Parse(reader["quantidade"].ToString()));
                 produtos.Add(produto);
             }
             reader.Close();
@@ -56,6 +56,7 @@ namespace HiveTech
             comando.Parameters.AddWithValue("@NOME", produto.Nome);
             comando.Parameters.AddWithValue("@PRECO", produto.Preco);
             comando.Parameters.AddWithValue("@IMAGEM", produto.Imagem);
+            comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
             comando.Parameters.AddWithValue("@ID", produto.Id);
             comando.ExecuteNonQuery();
         }
@@ -94,6 +95,24 @@ namespace HiveTech
             {
                 Carrinho.Adicionar(produto);
             }
+        }
+
+        public Produto GetProduto(int Id) 
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM produto Where id = @id";
+            comando.Parameters.AddWithValue("@id", Id);
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            reader.Read();
+
+            Produto produto = new Produto(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString(), int.Parse(reader["quantidade"].ToString()));
+
+            reader.Close();
+
+            return produto;
         }
     }
 }

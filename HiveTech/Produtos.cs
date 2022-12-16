@@ -16,12 +16,13 @@ namespace HiveTech
         public string Imagem { get; set; }
         public int Quantidade { get; set; }
 
-        public Produto(int id, string nome, decimal preco, string imagem)
+        public Produto(int id, string nome, decimal preco, string imagem, int Qtde = 0)
         {
             Id = id;
             Nome = nome;
             Preco = preco;
             Imagem = imagem;
+            Quantidade = Qtde;
         }
         
         public int getId()

@@ -28,11 +28,13 @@ namespace HiveTech
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Produto produto = new Produto(0, txtDescricao.Text, Decimal.Parse(txtPreco.Text), txtLink.Text);
+            Produto produto = new Produto(0, txtDescricao.Text, Decimal.Parse(txtPreco.Text), txtLink.Text, int.Parse(txtPreco.Text));
 
             ProdutoDAO ProdutoDAO = new ProdutoDAO();
 
             ProdutoDAO.Inserir(produto);
+
+            MessageBox.Show("Produto cadastrado com sucesso!");
         }
     }
 }
