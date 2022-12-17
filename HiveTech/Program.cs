@@ -16,7 +16,7 @@ namespace HiveTech
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGerenciarProdutos());
+            Application.Run(new FrmGerenciarClientes());
         }
     }
 }

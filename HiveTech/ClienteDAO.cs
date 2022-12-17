@@ -35,13 +35,13 @@ namespace HiveTech
             List<Cliente> clientes = new List<Cliente>();
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = @"SELECT * FROM cliente";
+            comando.CommandText = @"SELECT * FROM cliente WHERE id NOT IN(SELECT id FROM administrador);";
 
             MySqlDataReader reader = comando.ExecuteReader();
 
             while(reader.Read())
             {
-                Cliente cliente = new Cliente (reader["nome"].ToString(), reader["email"].ToString(), reader["senha"].ToString() , reader["cpf"].ToString(), reader["dt"].ToString());
+                Cliente cliente = new Cliente (reader["nome"].ToString(), reader["email"].ToString(), reader["senha"].ToString() , reader["cpf"].ToString(), reader["data_de_nascimento"].ToString(), int.Parse(reader["id"].ToString()));
                 clientes.Add(cliente);
 
             }
@@ -70,6 +70,16 @@ namespace HiveTech
             comando.Parameters.AddWithValue("@ID", id);
             comando.ExecuteNonQuery();
 
+        }
+
+        internal void TornarAdministrador(int id, string Chave)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = @"INSERT INTO administrador (id_cliente, chaveDeAcesso) VALUES (@id, SHA2(@chaveDeAcesso, 256))";
+            comando.Parameters.AddWithValue("@ID", id);
+            comando.Parameters.AddWithValue("@chaveDeAcesso", Chave);
+            comando.ExecuteNonQuery();
         }
     }
 

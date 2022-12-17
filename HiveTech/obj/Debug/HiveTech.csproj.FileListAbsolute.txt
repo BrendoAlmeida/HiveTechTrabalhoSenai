@@ -46,3 +46,5 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frm
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmAlterarCliente.resources
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmGerenciarProdutos.resources
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmAlterarProduto.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmGerenciarClientes.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmTornarAdministrador.resources
