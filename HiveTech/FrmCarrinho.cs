@@ -28,9 +28,6 @@ namespace HiveTech
 
             if (Carrinho.GetQuantidade() == 0)
             {
-                //ProdutoDAO Debug = new ProdutoDAO();
-                //Debug.AdicionarCarrinho(6);
-
                 MessageBox.Show("Carrinho vazio!");
                 return;
             }
@@ -83,6 +80,7 @@ namespace HiveTech
             {
                 Carrinho.Comprar(LoginInfo.Id);
                 MessageBox.Show("Compra realizada com sucesso!");
+                Carrinho.Limpar();
                 AtualizarCarrinho();
                 return;
             }

@@ -112,6 +112,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 349);
             this.Controls.Add(this.DgvProdutos);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProduto";

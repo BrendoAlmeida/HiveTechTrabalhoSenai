@@ -79,12 +79,6 @@
     <Compile Include="FormProduto.Designer.cs">
       <DependentUpon>FormProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdministrador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAdministrador.Designer.cs">
-      <DependentUpon>frmAdministrador.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +86,11 @@
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Carrinho.cs" />
-    <Compile Include="FrmAlterarCliente.cs">
+    <Compile Include="FrmAlterarCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAlterarCliente.Designer.cs">
-      <DependentUpon>FrmAlterarCliente.cs</DependentUpon>
+    <Compile Include="FrmAlterarCadastro.Designer.cs">
+      <DependentUpon>FrmAlterarCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAlterarProduto.cs">
       <SubType>Form</SubType>
@@ -122,6 +116,12 @@
     <Compile Include="frmGerenciarProdutos.Designer.cs">
       <DependentUpon>frmGerenciarProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPedidos.Designer.cs">
+      <DependentUpon>FrmPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="ItensCarrinho.cs" />
     <Compile Include="LoginInfo.cs" />
+    <Compile Include="PedidoDAO.cs" />
     <Compile Include="VendaClass.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -159,11 +160,8 @@
     <EmbeddedResource Include="FormProduto.resx">
       <DependentUpon>FormProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdministrador.resx">
-      <DependentUpon>frmAdministrador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAlterarCliente.resx">
-      <DependentUpon>FrmAlterarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAlterarCadastro.resx">
+      <DependentUpon>FrmAlterarCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlterarProduto.resx">
       <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
@@ -182,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPedidos.resx">
+      <DependentUpon>FrmPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduto.resx">
       <DependentUpon>FrmProduto.cs</DependentUpon>

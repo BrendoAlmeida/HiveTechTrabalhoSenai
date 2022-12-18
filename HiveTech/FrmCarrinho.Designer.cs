@@ -176,7 +176,7 @@
             // 
             // BtnAtualizar
             // 
-            this.BtnAtualizar.Location = new System.Drawing.Point(1168, 12);
+            this.BtnAtualizar.Location = new System.Drawing.Point(1049, 50);
             this.BtnAtualizar.Name = "BtnAtualizar";
             this.BtnAtualizar.Size = new System.Drawing.Size(75, 23);
             this.BtnAtualizar.TabIndex = 3;
@@ -188,11 +188,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 434);
+            this.ClientSize = new System.Drawing.Size(1135, 434);
             this.Controls.Add(this.BtnAtualizar);
             this.Controls.Add(this.BtnComprar);
             this.Controls.Add(this.DgvProdutos);
             this.Name = "FrmCarrinho";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carrinho";
             this.Load += new System.EventHandler(this.FrmCarrinho_Load);

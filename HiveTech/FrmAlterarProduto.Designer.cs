@@ -148,7 +148,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmAlterarProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAlterarProduto";
             this.Load += new System.EventHandler(this.FrmAlterarProduto_Load);
             this.ResumeLayout(false);

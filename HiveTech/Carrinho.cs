@@ -101,11 +101,12 @@ namespace HiveTech
 
             foreach (ItensCarrinho item in Produtos)
             {
-                comando.CommandText = "INSERT INTO itenspedidos (id_pedido, id_produto, produto, quantidade) VALUES (@id_pedido, @id_produto, @nomeProduto, @quantidade)";
+                comando.CommandText = "INSERT INTO itenspedidos (id_pedido, id_produto, produto, quantidade, sub_total) VALUES (@id_pedido, @id_produto, @nomeProduto, @quantidade, @sub_total)";
                 comando.Parameters.AddWithValue("@id_pedido", idPedido);
                 comando.Parameters.AddWithValue("@id_produto", item.Id);
                 comando.Parameters.AddWithValue("@nomeProduto", item.Nome);
                 comando.Parameters.AddWithValue("@quantidade", item.Quantidade);
+                comando.Parameters.AddWithValue("@sub_total", item.ValorTotal);
                 comando.ExecuteNonQuery();
                 comando.Parameters.Clear();
             }

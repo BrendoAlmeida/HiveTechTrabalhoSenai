@@ -29,6 +29,7 @@ namespace HiveTech
 
             ClienteDAO clienteDao = new ClienteDAO();
             clienteDao.Inserir(cliente);
+            MessageBox.Show("Cadastrado com sucesso!");
         }
     }
 }

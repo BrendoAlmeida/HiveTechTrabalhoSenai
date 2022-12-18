@@ -95,6 +95,7 @@
             this.lblCriarConta.Size = new System.Drawing.Size(75, 13);
             this.lblCriarConta.TabIndex = 5;
             this.lblCriarConta.Text = "Criar um conta";
+            this.lblCriarConta.Click += new System.EventHandler(this.lblCriarConta_Click);
             // 
             // btnLogin
             // 
@@ -112,6 +113,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 217);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

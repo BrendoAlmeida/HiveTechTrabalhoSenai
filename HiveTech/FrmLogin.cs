@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using MySql.Data.MySqlClient;
 
 namespace HiveTech
@@ -40,18 +39,19 @@ namespace HiveTech
 
                 LoginInfo.Id = Convert.ToString(Reader["id"]);
                 LoginInfo.IsLogin = true;
+                LoginInfo.Nome = Convert.ToString(Reader["nome"]);
 
                 AdministradorDAO AdmDAO = new AdministradorDAO();
 
                 LoginInfo.IsAdmin = AdmDAO.IsAdmin(int.Parse(LoginInfo.Id));
-
-                frmMain Main = new frmMain();
-
+                
                 if (!Application.OpenForms.OfType<frmMain>().Any())
                 {
+                    frmMain Main = new frmMain();
                     Main.Show();
                 }
                 Application.OpenForms.OfType<frmMain>().First().verifIdAdmin();
+                Application.OpenForms.OfType<frmMain>().First().verifIsLogin();
                 this.Hide();
             }
             else
@@ -60,6 +60,18 @@ namespace HiveTech
             }
             Reader.Close();
             conn.Close();
+        }
+
+        private void lblCriarConta_Click(object sender, EventArgs e)
+        {
+            if (!Application.OpenForms.OfType<frmMain>().Any())
+            {
+                frmMain Main = new frmMain();
+                Main.Show();
+            }
+            FormCadastro Cadastro = new FormCadastro();
+            Cadastro.MdiParent = Application.OpenForms.OfType<frmMain>().First();
+            Cadastro.Show();
         }
     }
 }

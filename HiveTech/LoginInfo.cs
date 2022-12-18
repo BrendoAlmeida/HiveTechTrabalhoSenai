@@ -12,6 +12,8 @@ namespace HiveTech
         public static string Id { get; set; }
         public static bool IsLogin { get; set; }
 
+        public static string Nome { get; set; }
+
         public static bool IsAdmin { get; set; }
     }
 }
