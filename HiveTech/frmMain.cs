@@ -91,7 +91,7 @@ namespace HiveTech
 
         private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPedidos frmPedidos = new FrmPedidos();
+            Pedidos frmPedidos = new Pedidos();
             frmPedidos.MdiParent = this;
             frmPedidos.Show();
         }

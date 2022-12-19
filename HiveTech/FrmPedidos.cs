@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HiveTech
 {
-    public partial class FrmPedidos : Form
+    public partial class Pedidos : Form
     {
-        public FrmPedidos()
+        public Pedidos()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace HiveTech
         private void FrmPedidos_Load(object sender, EventArgs e)
         {
             PedidoDAO pedidoDAO = new PedidoDAO();
-            List<ItensCarrinho> pedidos = pedidoDAO.ListarPedidos(1);
+            List<ItensCarrinho> pedidos = pedidoDAO.ListarPedidos(int.Parse(LoginInfo.Id));
             foreach (ItensCarrinho pedido in pedidos)
             {
                 string Image = pedido.Imagem;
