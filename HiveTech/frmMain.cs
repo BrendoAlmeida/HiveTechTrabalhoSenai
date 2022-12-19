@@ -76,8 +76,10 @@ namespace HiveTech
         {
             LoginInfo.IsLogin = false;
             LoginInfo.IsAdmin = false;
+            LoginInfo.ChaveCinfirmado = false;
             verifIsLogin();
             verifIdAdmin();
+            liberarAdmin();
         }
 
         private void alterarInformaçõesDeCadastroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,6 +99,36 @@ namespace HiveTech
         private void atualizarHora_Tick(object sender, EventArgs e)
         {
             txtHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void criarAdiministradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTornarAdministrador Adm = new FrmTornarAdministrador();
+            Adm.MdiParent = this;
+            Adm.Show();
+        }
+
+        public void liberarAdmin()
+        {
+            cadastroProdutosToolStripMenuItem.Enabled = LoginInfo.ChaveCinfirmado;
+            cadastroProdutosToolStripMenuItem.Visible = LoginInfo.ChaveCinfirmado;
+
+            gerenciarEstoqueToolStripMenuItem.Enabled = LoginInfo.ChaveCinfirmado;
+            gerenciarEstoqueToolStripMenuItem.Visible = LoginInfo.ChaveCinfirmado;
+
+            criarAdministradorToolStripMenuItem.Enabled = LoginInfo.ChaveCinfirmado;
+            criarAdministradorToolStripMenuItem.Visible = LoginInfo.ChaveCinfirmado;
+        }
+
+        private void administradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (LoginInfo.ChaveCinfirmado)
+            {
+                return;
+            }
+            FrmVerifChaveAdmin Chave = new FrmVerifChaveAdmin();
+            Chave.MdiParent = this;
+            Chave.Show();
         }
     }
 }

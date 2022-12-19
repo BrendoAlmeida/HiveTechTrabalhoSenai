@@ -1,6 +1,6 @@
 ﻿namespace HiveTech
 {
-    partial class FrmTornarAdministrador
+    partial class FrmVerifChaveAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,50 +29,51 @@
         private void InitializeComponent()
         {
             this.lblChave = new System.Windows.Forms.Label();
-            this.txtChaveAcesso = new System.Windows.Forms.TextBox();
-            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.txtChave = new System.Windows.Forms.TextBox();
+            this.BtnLogar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblChave
             // 
             this.lblChave.AutoSize = true;
-            this.lblChave.Location = new System.Drawing.Point(9, 26);
+            this.lblChave.Location = new System.Drawing.Point(8, 16);
             this.lblChave.Name = "lblChave";
-            this.lblChave.Size = new System.Drawing.Size(91, 13);
+            this.lblChave.Size = new System.Drawing.Size(38, 13);
             this.lblChave.TabIndex = 0;
-            this.lblChave.Text = "Chave de Acesso";
+            this.lblChave.Text = "Chave";
             // 
-            // txtChaveAcesso
+            // txtChave
             // 
-            this.txtChaveAcesso.Location = new System.Drawing.Point(12, 53);
-            this.txtChaveAcesso.Name = "txtChaveAcesso";
-            this.txtChaveAcesso.Size = new System.Drawing.Size(239, 20);
-            this.txtChaveAcesso.TabIndex = 1;
+            this.txtChave.Location = new System.Drawing.Point(48, 16);
+            this.txtChave.Name = "txtChave";
+            this.txtChave.PasswordChar = '*';
+            this.txtChave.Size = new System.Drawing.Size(176, 20);
+            this.txtChave.TabIndex = 1;
             // 
-            // btnAtualizar
+            // BtnLogar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(12, 96);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(239, 23);
-            this.btnAtualizar.TabIndex = 2;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.button1_Click);
+            this.BtnLogar.Location = new System.Drawing.Point(72, 48);
+            this.BtnLogar.Name = "BtnLogar";
+            this.BtnLogar.Size = new System.Drawing.Size(104, 23);
+            this.BtnLogar.TabIndex = 2;
+            this.BtnLogar.Text = "Login";
+            this.BtnLogar.UseVisualStyleBackColor = true;
+            this.BtnLogar.Click += new System.EventHandler(this.BtnLogar_Click);
             // 
-            // FrmTornarAdministrador
+            // FrmVerifChaveAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 144);
-            this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.txtChaveAcesso);
+            this.ClientSize = new System.Drawing.Size(240, 87);
+            this.Controls.Add(this.BtnLogar);
+            this.Controls.Add(this.txtChave);
             this.Controls.Add(this.lblChave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmTornarAdministrador";
+            this.Name = "FrmVerifChaveAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmTornarAdministrador";
+            this.Text = "Confirmar Chave";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,7 +82,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblChave;
-        private System.Windows.Forms.TextBox txtChaveAcesso;
-        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.TextBox txtChave;
+        private System.Windows.Forms.Button BtnLogar;
     }
 }

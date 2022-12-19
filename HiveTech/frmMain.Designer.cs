@@ -36,6 +36,7 @@
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.criarAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarInformaçõesDeCadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,26 +89,41 @@
             // 
             this.administradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroProdutosToolStripMenuItem,
-            this.gerenciarEstoqueToolStripMenuItem});
+            this.gerenciarEstoqueToolStripMenuItem,
+            this.criarAdministradorToolStripMenuItem});
             this.administradorToolStripMenuItem.Enabled = false;
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
             this.administradorToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.administradorToolStripMenuItem.Text = "Administrador";
             this.administradorToolStripMenuItem.Visible = false;
+            this.administradorToolStripMenuItem.Click += new System.EventHandler(this.administradorToolStripMenuItem_Click);
             // 
             // cadastroProdutosToolStripMenuItem
             // 
+            this.cadastroProdutosToolStripMenuItem.Enabled = false;
             this.cadastroProdutosToolStripMenuItem.Name = "cadastroProdutosToolStripMenuItem";
-            this.cadastroProdutosToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.cadastroProdutosToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.cadastroProdutosToolStripMenuItem.Text = "Cadastro Produtos";
+            this.cadastroProdutosToolStripMenuItem.Visible = false;
             this.cadastroProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadastroProdutosToolStripMenuItem_Click);
             // 
             // gerenciarEstoqueToolStripMenuItem
             // 
+            this.gerenciarEstoqueToolStripMenuItem.Enabled = false;
             this.gerenciarEstoqueToolStripMenuItem.Name = "gerenciarEstoqueToolStripMenuItem";
-            this.gerenciarEstoqueToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.gerenciarEstoqueToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.gerenciarEstoqueToolStripMenuItem.Text = "Gerenciar Produtos";
+            this.gerenciarEstoqueToolStripMenuItem.Visible = false;
             this.gerenciarEstoqueToolStripMenuItem.Click += new System.EventHandler(this.gerenciarEstoqueToolStripMenuItem_Click);
+            // 
+            // criarAdministradorToolStripMenuItem
+            // 
+            this.criarAdministradorToolStripMenuItem.Enabled = false;
+            this.criarAdministradorToolStripMenuItem.Name = "criarAdministradorToolStripMenuItem";
+            this.criarAdministradorToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.criarAdministradorToolStripMenuItem.Text = "Criar administrador";
+            this.criarAdministradorToolStripMenuItem.Visible = false;
+            this.criarAdministradorToolStripMenuItem.Click += new System.EventHandler(this.criarAdiministradorToolStripMenuItem_Click);
             // 
             // contaToolStripMenuItem
             // 
@@ -211,5 +227,6 @@
         private System.Windows.Forms.ToolStripStatusLabel lblUser;
         private System.Windows.Forms.ToolStripStatusLabel txtHora;
         private System.Windows.Forms.Timer atualizarHora;
+        private System.Windows.Forms.ToolStripMenuItem criarAdministradorToolStripMenuItem;
     }
 }

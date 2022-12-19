@@ -134,6 +134,12 @@
     <Compile Include="FrmTornarAdministrador.Designer.cs">
       <DependentUpon>FrmTornarAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVerifChaveAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerifChaveAdmin.Designer.cs">
+      <DependentUpon>FrmVerifChaveAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItensCarrinho.cs" />
     <Compile Include="LoginInfo.cs" />
     <Compile Include="PedidoDAO.cs" />
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTornarAdministrador.resx">
       <DependentUpon>FrmTornarAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerifChaveAdmin.resx">
+      <DependentUpon>FrmVerifChaveAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

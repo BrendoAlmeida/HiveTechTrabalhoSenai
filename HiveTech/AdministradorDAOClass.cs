@@ -17,23 +17,6 @@ namespace HiveTech
             conexao.Open();
         }
 
-        internal void Inserir(Administrador administrador)
-        {
-            if (this.Checar(administrador.Chave))
-            {
-                MySqlCommand comando = new MySqlCommand();
-                comando.Connection = conexao;
-                comando.CommandText = @"INSERT INTO admistritador (nome, email, senha, cpf, data_de_nascimento, chave) VALUES (@nome; @email, sha2( @senha,256 ), @cpf, @data_de_nascimento, @chave)";
-                comando.Parameters.AddWithValue("@nome", administrador.Nome);
-                comando.Parameters.AddWithValue("@email", administrador.Email);
-                comando.Parameters.AddWithValue("@senha", administrador.Senha);
-                comando.Parameters.AddWithValue("@cpf", administrador.Cpf);
-                comando.Parameters.AddWithValue("@data_de_nascimento", administrador.Data_Nascimento);
-                comando.Parameters.AddWithValue("@chave", administrador.Chave);
-                comando.ExecuteNonQuery();
-            }
-        }
-
         internal void Alterar(Administrador administrador)
         {
             MySqlCommand comando = new MySqlCommand();
@@ -57,15 +40,14 @@ namespace HiveTech
         }
 
 
-        protected bool Checar(string Chave) 
+        public bool VerifChave(string Chave) 
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = @"SELECT * FROM administrador where Chave = @chave";
+            comando.CommandText = @"SELECT * FROM administrador where chaveDeAcesso = SHA2(@chave, 256)";
             comando.Parameters.AddWithValue("@chave", Chave);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            reader.Close();
             return reader.HasRows;
         }
 
