@@ -132,7 +132,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmGerenciarClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmGerenciarClientes";
+            this.Text = "Gerenciar Clientes";
             this.Load += new System.EventHandler(this.FrmGerenciarClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
             this.ResumeLayout(false);

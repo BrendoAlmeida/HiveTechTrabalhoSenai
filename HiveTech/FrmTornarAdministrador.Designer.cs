@@ -72,7 +72,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmTornarAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmTornarAdministrador";
+            this.Text = "Tornar dministrador";
             this.ResumeLayout(false);
             this.PerformLayout();
 

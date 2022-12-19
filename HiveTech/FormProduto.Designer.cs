@@ -153,7 +153,7 @@
             this.MinimizeBox = false;
             this.Name = "FormProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormProduto";
+            this.Text = "Cadastro de Produto";
             this.ResumeLayout(false);
             this.PerformLayout();
 

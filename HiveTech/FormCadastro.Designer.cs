@@ -162,7 +162,7 @@
             this.MinimizeBox = false;
             this.Name = "FormCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCadastro";
+            this.Text = "Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();
 

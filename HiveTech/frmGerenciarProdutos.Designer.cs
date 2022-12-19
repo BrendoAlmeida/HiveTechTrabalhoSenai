@@ -144,7 +144,7 @@
             this.MinimizeBox = false;
             this.Name = "frmGerenciarProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmGerenciarProdutos";
+            this.Text = "Gerenciar Produtos";
             this.Load += new System.EventHandler(this.frmGerenciarProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvProdutos)).EndInit();
             this.ResumeLayout(false);

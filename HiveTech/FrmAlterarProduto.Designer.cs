@@ -153,7 +153,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAlterarProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAlterarProduto";
+            this.Text = "Alterar Produto";
             this.Load += new System.EventHandler(this.FrmAlterarProduto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

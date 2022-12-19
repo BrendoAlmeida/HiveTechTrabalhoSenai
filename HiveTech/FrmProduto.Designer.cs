@@ -117,7 +117,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmProduto";
+            this.Text = "Produtos";
             this.Load += new System.EventHandler(this.FrmProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvProdutos)).EndInit();
             this.ResumeLayout(false);
