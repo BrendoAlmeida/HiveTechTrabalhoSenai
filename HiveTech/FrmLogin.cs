@@ -20,7 +20,7 @@ namespace HiveTech
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection("Server=localhost;Database=HiveTechDB;Uid=root;Pwd=;");
+            MySqlConnection conn = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
             MySqlCommand sql = new MySqlCommand
             {
                 Connection = conn,

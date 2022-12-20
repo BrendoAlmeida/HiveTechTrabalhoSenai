@@ -109,6 +109,29 @@ namespace HiveTech
                 comando.Parameters.AddWithValue("@sub_total", item.ValorTotal);
                 comando.ExecuteNonQuery();
                 comando.Parameters.Clear();
+
+                comando.CommandText = "SELECT quantidade FROM produto WHERE id = @id_produto";
+                comando.Parameters.AddWithValue("@id_produto", item.Id);
+                MySqlDataReader reader = comando.ExecuteReader();
+                reader.Read();
+                int quantidade = int.Parse(reader["quantidade"].ToString());
+                reader.Close();
+
+                if (quantidade < item.Quantidade)
+                {
+                    return;
+                }
+
+                comando.Parameters.Clear();
+
+                quantidade -= item.Quantidade;
+                comando.CommandText = "UPDATE produto SET quantidade = @quantidade WHERE id = @id_produto";
+                comando.Parameters.AddWithValue("@quantidade", quantidade);
+                comando.Parameters.AddWithValue("@id_produto", item.Id);
+
+                comando.ExecuteNonQuery();
+
+                comando.Parameters.Clear();
             }
             comando.Connection.Close();
         }

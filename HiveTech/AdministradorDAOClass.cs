@@ -13,7 +13,7 @@ namespace HiveTech
 
         public AdministradorDAO()
         {
-            conexao = new MySqlConnection("Server=localhost;Database=HiveTechDB;Uid=root;Pws=;");
+            conexao = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
             conexao.Open();
         }
 
