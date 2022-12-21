@@ -35,19 +35,16 @@ namespace HiveTech
             List<Produto> produtos = new List<Produto>();
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
-            comando.CommandText = "SELECT * FROM produto";
-            DataTable tabela = new DataTable();
-            tabela.Load(comando.ExecuteReader());
-            foreach (DataRow linha in tabela.Rows)
+            comando.CommandText = @"SELECT * FROM produto";
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            while(reader.Read())
             {
-                Produto produto = new Produto();
-                produto.Id = Convert.ToInt32(linha["id"]);
-                produto.Nome = linha["nome"].ToString();
-                produto.Preco = Convert.ToDecimal(linha["preco"]);
-                produto.Quantidade = Convert.ToInt32(linha["quantidade"]);
-                produto.Imagem = linha["imagem"].ToString();
+                Produto produto = new Produto(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString(), int.Parse(reader["quantidade"].ToString()));
                 produtos.Add(produto);
             }
+            reader.Close();
             return produtos;
         }
 
@@ -58,8 +55,8 @@ namespace HiveTech
             comando.CommandText = @"UPDATE produto SET nome = @NOME, preco = @PRECO, quantidade = @QUANTIDADE, imagem = @IMAGEM WHERE id = @ID";
             comando.Parameters.AddWithValue("@NOME", produto.Nome);
             comando.Parameters.AddWithValue("@PRECO", produto.Preco);
-            comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
             comando.Parameters.AddWithValue("@IMAGEM", produto.Imagem);
+            comando.Parameters.AddWithValue("@QUANTIDADE", produto.Quantidade);
             comando.Parameters.AddWithValue("@ID", produto.Id);
             comando.ExecuteNonQuery();
         }
@@ -71,6 +68,51 @@ namespace HiveTech
             comando.CommandText = "DELETE FROM produto WHERE id = @ID";
             comando.Parameters.AddWithValue("@ID", id);
             comando.ExecuteNonQuery();
+        }
+
+        public void AdicionarCarrinho(int IdProduto)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM produto Where id = @id";
+            comando.Parameters.AddWithValue("@id", IdProduto);
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            reader.Read();
+
+            ItensCarrinho produto = new ItensCarrinho(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString(), 1, Convert.ToDecimal(reader["preco"]));
+            
+            reader.Close();
+
+            int id = produto.getId();
+            
+            if (Carrinho.VerifcarSeExiste(id))
+            {
+                Carrinho.AdicionarQuantidade(id);
+            }
+            else
+            {
+                Carrinho.Adicionar(produto);
+            }
+        }
+
+        public Produto GetProduto(int Id) 
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM produto Where id = @id";
+            comando.Parameters.AddWithValue("@id", Id);
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            reader.Read();
+
+            Produto produto = new Produto(Convert.ToInt32(reader["id"]), reader["nome"].ToString(), Convert.ToDecimal(reader["preco"]), reader["imagem"].ToString(), int.Parse(reader["quantidade"].ToString()));
+
+            reader.Close();
+
+            return produto;
         }
     }
 }

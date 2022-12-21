@@ -60,7 +60,7 @@ namespace HiveTech
             return vendas;
         }
 
-        public void Alterar(Venda venda)
+        protected void Alterar(Venda venda)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;
@@ -73,7 +73,7 @@ namespace HiveTech
             comando.ExecuteNonQuery();
         }
 
-        public void Apagar(int id)
+        protected void Apagar(int id)
         {
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexao;

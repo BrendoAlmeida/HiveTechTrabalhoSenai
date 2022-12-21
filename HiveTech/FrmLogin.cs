@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using MySql.Data.MySqlClient;
 
 namespace HiveTech
@@ -22,9 +21,11 @@ namespace HiveTech
         private void btnLogin_Click(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection("Server=localhost;Database=HiveTechDB;Uid=root;Pwd=;");
-            MySqlCommand sql = new MySqlCommand();
-            sql.Connection = conn;
-            sql.CommandText = @"SELECT * FROM cliente where email = @email and senha = SHA2( @senha , 256)";
+            MySqlCommand sql = new MySqlCommand
+            {
+                Connection = conn,
+                CommandText = @"SELECT * FROM cliente where email = @email and senha = SHA2( @senha , 256)"
+            };
             sql.Parameters.AddWithValue("@email", txtEmail.Text);
             sql.Parameters.AddWithValue("@senha", txtSenha.Text);
 
@@ -34,10 +35,43 @@ namespace HiveTech
 
             if (Reader.HasRows)
             {
-                frmMain Main = new frmMain();
-                Main.Show();
+                Reader.Read();
+
+                LoginInfo.Id = Convert.ToString(Reader["id"]);
+                LoginInfo.IsLogin = true;
+                LoginInfo.Nome = Convert.ToString(Reader["nome"]);
+
+                AdministradorDAO AdmDAO = new AdministradorDAO();
+
+                LoginInfo.IsAdmin = AdmDAO.IsAdmin(int.Parse(LoginInfo.Id));
+                
+                if (!Application.OpenForms.OfType<frmMain>().Any())
+                {
+                    frmMain Main = new frmMain();
+                    Main.Show();
+                }
+                Application.OpenForms.OfType<frmMain>().First().verifIdAdmin();
+                Application.OpenForms.OfType<frmMain>().First().verifIsLogin();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Usuário não encontrado!");
+            }
+            Reader.Close();
+            conn.Close();
+        }
+
+        private void lblCriarConta_Click(object sender, EventArgs e)
+        {
+            if (!Application.OpenForms.OfType<frmMain>().Any())
+            {
+                frmMain Main = new frmMain();
+                Main.Show();
+            }
+            FormCadastro Cadastro = new FormCadastro();
+            Cadastro.MdiParent = Application.OpenForms.OfType<frmMain>().First();
+            Cadastro.Show();
         }
 
         private void lineShape1_Click(object sender, EventArgs e)

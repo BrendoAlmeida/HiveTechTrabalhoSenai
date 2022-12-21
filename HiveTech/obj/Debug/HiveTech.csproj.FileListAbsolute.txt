@@ -7,8 +7,6 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.pdb
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
-<<<<<<< Updated upstream
-=======
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmMain.resources
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.AssemblyReference.cache
@@ -73,4 +71,3 @@ D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
 D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmTornarAdministrador.resources
 D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.Properties.Resources.resources
 D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.GenerateResource.Cache
->>>>>>> Stashed changes

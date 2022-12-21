@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< Updated upstream
-=======
             this.menu = new System.Windows.Forms.MenuStrip();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carrinhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -178,11 +176,41 @@
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
->>>>>>> Stashed changes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1099, 544);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.menu);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menu;
+            this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menu;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carrinhoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerenciarEstoqueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarInformaçõesDeCadastroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lblUser;
+        private System.Windows.Forms.ToolStripStatusLabel txtHora;
+        private System.Windows.Forms.Timer atualizarHora;
     }
 }

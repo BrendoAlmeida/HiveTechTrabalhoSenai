@@ -67,12 +67,8 @@
             this.txtSenha.Location = new System.Drawing.Point(320, 152);
             this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
-<<<<<<< Updated upstream
-            this.txtSenha.Size = new System.Drawing.Size(216, 20);
-=======
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(400, 24);
->>>>>>> Stashed changes
             this.txtSenha.TabIndex = 3;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
@@ -104,6 +100,7 @@
             this.lblCriarConta.Size = new System.Drawing.Size(89, 16);
             this.lblCriarConta.TabIndex = 5;
             this.lblCriarConta.Text = "Criar um conta";
+            this.lblCriarConta.Click += new System.EventHandler(this.lblCriarConta_Click);
             // 
             // label1
             // 
@@ -205,14 +202,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< Updated upstream
-            this.ClientSize = new System.Drawing.Size(266, 217);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "FrmLogin";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-=======
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(780, 330);
@@ -235,7 +224,6 @@
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
->>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 

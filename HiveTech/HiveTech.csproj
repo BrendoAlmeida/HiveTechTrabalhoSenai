@@ -71,7 +71,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientesClass.cs" />
+    <Compile Include="Administrador.cs" />
+    <Compile Include="AdministradorDAOClass.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteDAO.cs" />
+    <Compile Include="FormProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduto.Designer.cs">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastro.Designer.cs">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carrinho.cs" />
+    <Compile Include="FrmAlterarCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarCadastro.Designer.cs">
+      <DependentUpon>FrmAlterarCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlterarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarProduto.Designer.cs">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCarrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarrinho.Designer.cs">
+      <DependentUpon>FrmCarrinho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGerenciarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGerenciarClientes.Designer.cs">
+      <DependentUpon>FrmGerenciarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGerenciarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGerenciarProdutos.Designer.cs">
+      <DependentUpon>frmGerenciarProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPedidos.Designer.cs">
+      <DependentUpon>FrmPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduto.Designer.cs">
+      <DependentUpon>FrmProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTornarAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTornarAdministrador.Designer.cs">
+      <DependentUpon>FrmTornarAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItensCarrinho.cs" />
+    <Compile Include="LoginInfo.cs" />
+    <Compile Include="PedidoDAO.cs" />
+    <Compile Include="VendaClass.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +153,44 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="ProdutoDAOClass.cs" />
-    <Compile Include="ProdutosClass.cs" />
+    <Compile Include="Produtos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCadastro.resx">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduto.resx">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarCadastro.resx">
+      <DependentUpon>FrmAlterarCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlterarProduto.resx">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarrinho.resx">
+      <DependentUpon>FrmCarrinho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGerenciarClientes.resx">
+      <DependentUpon>FrmGerenciarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGerenciarProdutos.resx">
+      <DependentUpon>frmGerenciarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPedidos.resx">
+      <DependentUpon>FrmPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduto.resx">
+      <DependentUpon>FrmProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTornarAdministrador.resx">
+      <DependentUpon>FrmTornarAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +214,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\imgTeste.png" />
+    <None Include="Resources\geladeira.png" />
+    <None Include="Resources\frigobar.png" />
+    <None Include="Resources\freezer2.png" />
+    <None Include="Resources\freezer.png" />
+    <None Include="Resources\maquina.png" />
+    <None Include="Resources\vitrine.png" />
+    <None Include="Resources\HiveTech.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
