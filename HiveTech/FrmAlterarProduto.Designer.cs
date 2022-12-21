@@ -233,7 +233,7 @@
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.shapeContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAlterarProduto";

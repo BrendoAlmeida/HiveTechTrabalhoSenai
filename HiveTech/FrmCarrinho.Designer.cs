@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DgvProdutos = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Img = new System.Windows.Forms.DataGridViewImageColumn();
@@ -45,8 +46,8 @@
             this.Adicionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Subtrair = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Remover = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.BtnComprar = new System.Windows.Forms.Button();
             this.BtnAtualizar = new System.Windows.Forms.Button();
+            this.BtnComprar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,8 @@
             this.DgvProdutos.Location = new System.Drawing.Point(-47, -25);
             this.DgvProdutos.Name = "DgvProdutos";
             this.DgvProdutos.ReadOnly = true;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            this.DgvProdutos.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.DgvProdutos.RowTemplate.Height = 120;
             this.DgvProdutos.Size = new System.Drawing.Size(1090, 462);
             this.DgvProdutos.TabIndex = 1;
@@ -91,9 +94,9 @@
             // 
             // Nome
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nome.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nome.DefaultCellStyle = dataGridViewCellStyle25;
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
             this.Nome.ReadOnly = true;
@@ -101,9 +104,9 @@
             // 
             // Descricao
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Descricao.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Descricao.DefaultCellStyle = dataGridViewCellStyle26;
             this.Descricao.HeaderText = "Descrição";
             this.Descricao.Name = "Descricao";
             this.Descricao.ReadOnly = true;
@@ -111,9 +114,9 @@
             // 
             // Quantidade
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantidade.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantidade.DefaultCellStyle = dataGridViewCellStyle27;
             this.Quantidade.HeaderText = "Quantidade";
             this.Quantidade.Name = "Quantidade";
             this.Quantidade.ReadOnly = true;
@@ -121,9 +124,9 @@
             // 
             // SubTotal
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle28;
             this.SubTotal.HeaderText = "SubTotal";
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.ReadOnly = true;
@@ -131,9 +134,9 @@
             // 
             // Adicionar
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Adicionar.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adicionar.DefaultCellStyle = dataGridViewCellStyle29;
             this.Adicionar.HeaderText = "Adicionar";
             this.Adicionar.Name = "Adicionar";
             this.Adicionar.ReadOnly = true;
@@ -142,9 +145,9 @@
             // 
             // Subtrair
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtrair.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtrair.DefaultCellStyle = dataGridViewCellStyle30;
             this.Subtrair.HeaderText = "Subtrair";
             this.Subtrair.Name = "Subtrair";
             this.Subtrair.ReadOnly = true;
@@ -153,9 +156,9 @@
             // 
             // Remover
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Remover.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Remover.DefaultCellStyle = dataGridViewCellStyle31;
             this.Remover.HeaderText = "Remover";
             this.Remover.Name = "Remover";
             this.Remover.ReadOnly = true;
@@ -163,35 +166,38 @@
             this.Remover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Remover.Width = 125;
             // 
-            // BtnComprar
-            // 
-            this.BtnComprar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnComprar.Location = new System.Drawing.Point(1049, 12);
-            this.BtnComprar.Name = "BtnComprar";
-            this.BtnComprar.Size = new System.Drawing.Size(75, 23);
-            this.BtnComprar.TabIndex = 2;
-            this.BtnComprar.Text = "Comprar";
-            this.BtnComprar.UseVisualStyleBackColor = true;
-            this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
-            // 
             // BtnAtualizar
             // 
-            this.BtnAtualizar.Location = new System.Drawing.Point(1049, 50);
+            this.BtnAtualizar.BackgroundImage = global::HiveTech.Properties.Resources.recarregar;
+            this.BtnAtualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAtualizar.Location = new System.Drawing.Point(513, 443);
             this.BtnAtualizar.Name = "BtnAtualizar";
-            this.BtnAtualizar.Size = new System.Drawing.Size(75, 23);
+            this.BtnAtualizar.Size = new System.Drawing.Size(75, 57);
             this.BtnAtualizar.TabIndex = 3;
-            this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = true;
             this.BtnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_Click);
+            // 
+            // BtnComprar
+            // 
+            this.BtnComprar.BackgroundImage = global::HiveTech.Properties.Resources.carrinho;
+            this.BtnComprar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnComprar.Location = new System.Drawing.Point(397, 443);
+            this.BtnComprar.Name = "BtnComprar";
+            this.BtnComprar.Size = new System.Drawing.Size(75, 57);
+            this.BtnComprar.TabIndex = 2;
+            this.BtnComprar.UseVisualStyleBackColor = true;
+            this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
             // 
             // FrmCarrinho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 434);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1040, 508);
             this.Controls.Add(this.BtnAtualizar);
             this.Controls.Add(this.BtnComprar);
             this.Controls.Add(this.DgvProdutos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmCarrinho";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

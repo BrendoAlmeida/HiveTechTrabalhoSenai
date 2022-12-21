@@ -41,9 +41,9 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -146,6 +146,7 @@
             this.btnLocaliza.TabIndex = 29;
             this.btnLocaliza.Text = "Localizar";
             this.btnLocaliza.UseVisualStyleBackColor = false;
+            this.btnLocaliza.Click += new System.EventHandler(this.btnLocaliza_Click_1);
             // 
             // btnCadastrar
             // 
@@ -161,8 +162,9 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(464, 32);
             this.btnCadastrar.TabIndex = 30;
-            this.btnCadastrar.Text = "Alterar";
+            this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click_1);
             // 
             // lineShape1
             // 
@@ -187,14 +189,14 @@
             this.shapeContainer1.TabIndex = 31;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape2
+            // lineShape4
             // 
-            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 323;
-            this.lineShape2.X2 = 789;
-            this.lineShape2.Y1 = 160;
-            this.lineShape2.Y2 = 160;
+            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 323;
+            this.lineShape4.X2 = 711;
+            this.lineShape4.Y1 = 271;
+            this.lineShape4.Y2 = 271;
             // 
             // lineShape3
             // 
@@ -205,14 +207,14 @@
             this.lineShape3.Y1 = 216;
             this.lineShape3.Y2 = 216;
             // 
-            // lineShape4
+            // lineShape2
             // 
-            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 323;
-            this.lineShape4.X2 = 711;
-            this.lineShape4.Y1 = 271;
-            this.lineShape4.Y2 = 271;
+            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 323;
+            this.lineShape2.X2 = 789;
+            this.lineShape2.Y1 = 160;
+            this.lineShape2.Y2 = 160;
             // 
             // FormProduto
             // 
@@ -229,6 +231,7 @@
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.shapeContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormProduto";

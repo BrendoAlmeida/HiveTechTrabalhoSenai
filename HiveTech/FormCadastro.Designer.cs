@@ -37,16 +37,16 @@
             this.text_nome = new System.Windows.Forms.TextBox();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.txt_senha = new System.Windows.Forms.TextBox();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txt_senha = new System.Windows.Forms.TextBox();
             this.txt_data_de_nascimento = new System.Windows.Forms.MaskedTextBox();
             this.txt_cpf = new System.Windows.Forms.MaskedTextBox();
             this.btn_enviar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -140,6 +140,42 @@
             this.shapeContainer1.TabIndex = 46;
             this.shapeContainer1.TabStop = false;
             // 
+            // lineShape5
+            // 
+            this.lineShape5.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape5.Name = "lineShape5";
+            this.lineShape5.X1 = 536;
+            this.lineShape5.X2 = 600;
+            this.lineShape5.Y1 = 343;
+            this.lineShape5.Y2 = 344;
+            // 
+            // lineShape4
+            // 
+            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 593;
+            this.lineShape4.X2 = 701;
+            this.lineShape4.Y1 = 352;
+            this.lineShape4.Y2 = 352;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 341;
+            this.lineShape3.X2 = 553;
+            this.lineShape3.Y1 = 243;
+            this.lineShape3.Y2 = 242;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 342;
+            this.lineShape2.X2 = 784;
+            this.lineShape2.Y1 = 176;
+            this.lineShape2.Y2 = 176;
+            // 
             // txt_email
             // 
             this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -152,15 +188,6 @@
             this.txt_email.TabIndex = 47;
             this.txt_email.Text = "E-MAIL";
             // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 342;
-            this.lineShape2.X2 = 784;
-            this.lineShape2.Y1 = 176;
-            this.lineShape2.Y2 = 176;
-            // 
             // txt_senha
             // 
             this.txt_senha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -172,24 +199,6 @@
             this.txt_senha.PasswordChar = '*';
             this.txt_senha.Size = new System.Drawing.Size(213, 12);
             this.txt_senha.TabIndex = 48;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 341;
-            this.lineShape3.X2 = 553;
-            this.lineShape3.Y1 = 243;
-            this.lineShape3.Y2 = 242;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 593;
-            this.lineShape4.X2 = 701;
-            this.lineShape4.Y1 = 352;
-            this.lineShape4.Y2 = 352;
             // 
             // txt_data_de_nascimento
             // 
@@ -228,6 +237,7 @@
             this.btn_enviar.TabIndex = 51;
             this.btn_enviar.Text = "CADASTRAR DADOS";
             this.btn_enviar.UseVisualStyleBackColor = false;
+            this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click_1);
             // 
             // label2
             // 
@@ -239,15 +249,6 @@
             this.label2.Size = new System.Drawing.Size(59, 18);
             this.label2.TabIndex = 42;
             this.label2.Text = "SENHA";
-            // 
-            // lineShape5
-            // 
-            this.lineShape5.BorderColor = System.Drawing.Color.DimGray;
-            this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 536;
-            this.lineShape5.X2 = 600;
-            this.lineShape5.Y1 = 343;
-            this.lineShape5.Y2 = 344;
             // 
             // FormCadastro
             // 
@@ -267,7 +268,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.shapeContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastro";

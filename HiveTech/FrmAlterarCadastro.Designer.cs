@@ -268,9 +268,10 @@
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.shapeContainer1);
             this.ForeColor = System.Drawing.Color.DimGray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Alterar Cadastro";
+            this.Name = "FrmAlterarCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configurações";
             this.Load += new System.EventHandler(this.FrmAlterarCadastro_Load);

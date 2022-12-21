@@ -36,7 +36,9 @@
             // lblChave
             // 
             this.lblChave.AutoSize = true;
-            this.lblChave.Location = new System.Drawing.Point(8, 16);
+            this.lblChave.BackColor = System.Drawing.Color.Transparent;
+            this.lblChave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblChave.Location = new System.Drawing.Point(27, 16);
             this.lblChave.Name = "lblChave";
             this.lblChave.Size = new System.Drawing.Size(38, 13);
             this.lblChave.TabIndex = 0;
@@ -44,7 +46,7 @@
             // 
             // txtChave
             // 
-            this.txtChave.Location = new System.Drawing.Point(48, 16);
+            this.txtChave.Location = new System.Drawing.Point(30, 32);
             this.txtChave.Name = "txtChave";
             this.txtChave.PasswordChar = '*';
             this.txtChave.Size = new System.Drawing.Size(176, 20);
@@ -52,7 +54,7 @@
             // 
             // BtnLogar
             // 
-            this.BtnLogar.Location = new System.Drawing.Point(72, 48);
+            this.BtnLogar.Location = new System.Drawing.Point(67, 55);
             this.BtnLogar.Name = "BtnLogar";
             this.BtnLogar.Size = new System.Drawing.Size(104, 23);
             this.BtnLogar.TabIndex = 2;
@@ -64,7 +66,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 87);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::HiveTech.Properties.Resources.Sem_título_2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(240, 116);
             this.Controls.Add(this.BtnLogar);
             this.Controls.Add(this.txtChave);
             this.Controls.Add(this.lblChave);

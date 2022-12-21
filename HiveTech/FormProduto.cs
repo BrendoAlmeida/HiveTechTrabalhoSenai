@@ -17,16 +17,8 @@ namespace HiveTech
             InitializeComponent();
         }
 
-        private void btnLocaliza_Click(object sender, EventArgs e)
-        {
-            if (link.ShowDialog() == DialogResult.OK) 
-            {
-                string filePath = link.FileName;
-                txtLink.Text = filePath;
-            }
-        }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click_1(object sender, EventArgs e)
         {
             Produto produto = new Produto(0, txtDescricao.Text, Decimal.Parse(txtPreco.Text), txtLink.Text, int.Parse(txtPreco.Text));
 
@@ -35,6 +27,15 @@ namespace HiveTech
             ProdutoDAO.Inserir(produto);
 
             MessageBox.Show("Produto cadastrado com sucesso!");
+        }
+
+        private void btnLocaliza_Click_1(object sender, EventArgs e)
+        {
+            if (link.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = link.FileName;
+                txtLink.Text = filePath;
+            }
         }
     }
 }
