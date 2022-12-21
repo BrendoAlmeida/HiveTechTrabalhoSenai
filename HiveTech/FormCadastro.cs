@@ -20,8 +20,8 @@ namespace HiveTech
 
         private void btn_enviar_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente(txt_nome.Text, txt_email.Text, txt_senha.Text, txt_cpf.Text, txt_data_de_nascimento.Text);
-            cliente.Nome = txt_nome.Text;
+            Cliente cliente = new Cliente(text_nome.Text, txt_email.Text, txt_senha.Text, txt_cpf.Text, txt_data_de_nascimento.Text);
+            cliente.Nome = text_nome.Text;
             cliente.Email = txt_email.Text;
             cliente.Senha = txt_senha.Text;
             cliente.Cpf = txt_cpf.Text;

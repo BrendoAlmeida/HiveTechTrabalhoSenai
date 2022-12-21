@@ -192,7 +192,6 @@
             this.Controls.Add(this.BtnAtualizar);
             this.Controls.Add(this.BtnComprar);
             this.Controls.Add(this.DgvProdutos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmCarrinho";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

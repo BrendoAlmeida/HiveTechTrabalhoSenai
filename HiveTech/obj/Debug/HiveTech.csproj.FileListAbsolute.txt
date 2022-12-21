@@ -55,3 +55,27 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.Frm
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.Pedidos.resources
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.Pedidos.resources
 C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmVerifChaveAdmin.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\bin\Debug\HiveTech.exe.config
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.exe
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.pdb
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.csprojResolveAssemblyReference.cache
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FormCadastro.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FormProduto.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmAlterarCadastro.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmAlterarProduto.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmCarrinho.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmGerenciarClientes.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.frmGerenciarProdutos.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmLogin.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.frmMain.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.Pedidos.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmTornarAdministrador.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.FrmVerifChaveAdmin.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.Properties.Resources.resources
+D:\quina\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.csproj.GenerateResource.Cache
+D:\quina\HiveTechTrabalhoSenai\HiveTech\bin\Debug\HiveTech.exe
+D:\quina\HiveTechTrabalhoSenai\HiveTech\bin\Debug\HiveTech.pdb
+D:\quina\HiveTechTrabalhoSenai\HiveTech\bin\Debug\System.Memory.dll
+D:\quina\HiveTechTrabalhoSenai\HiveTech\bin\Debug\System.Numerics.Vectors.dll
+D:\quina\HiveTechTrabalhoSenai\HiveTech\bin\Debug\System.Buffers.dll
