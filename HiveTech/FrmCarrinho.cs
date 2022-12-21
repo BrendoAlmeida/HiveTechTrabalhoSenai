@@ -35,7 +35,7 @@ namespace HiveTech
             foreach (ItensCarrinho item in Carrinho.GetProdutos())
             {
                 string Image = item.Imagem;
-                this.DgvProdutos.Rows.Add(item.Id, Properties.Resources.ResourceManager.GetObject(Image.Replace("img/", "").Replace(".png", "")), item.Nome, "R$" + item.Preco, item.Quantidade, "R$" + item.ValorTotal, "+", "-", "Remover");
+                this.DgvProdutos.Rows.Add(item.Id, Properties.Resources.ResourceManager.GetObject(Image.Replace("img/", "").Replace(".png", "")), item.Nome, "R$" + item.Preco, item.Quantidade, "R$" + item.ValorTotal, "+", "-");
             }
         }
 

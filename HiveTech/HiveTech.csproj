@@ -233,6 +233,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="image\imgTeste.png" />
+    <None Include="Resources\trash.jpg" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\BACK %281%29.jpg" />
+    <None Include="Resources\BACK.jpg" />
     <None Include="Resources\carrinho.png" />
     <None Include="Resources\recarregar.png" />
     <None Include="Resources\Sem título-2.jpg" />

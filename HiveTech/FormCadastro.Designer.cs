@@ -54,11 +54,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(640, 216);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 21);
+            this.label4.Size = new System.Drawing.Size(40, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "CPF";
             // 
@@ -108,11 +108,11 @@
             // 
             this.text_nome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.text_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.text_nome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_nome.ForeColor = System.Drawing.Color.DimGray;
             this.text_nome.Location = new System.Drawing.Point(344, 88);
             this.text_nome.Name = "text_nome";
-            this.text_nome.Size = new System.Drawing.Size(440, 19);
+            this.text_nome.Size = new System.Drawing.Size(440, 17);
             this.text_nome.TabIndex = 45;
             this.text_nome.Text = "NOME";
             // 
@@ -180,11 +180,11 @@
             // 
             this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_email.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.ForeColor = System.Drawing.Color.DimGray;
             this.txt_email.Location = new System.Drawing.Point(344, 152);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(440, 19);
+            this.txt_email.Size = new System.Drawing.Size(440, 17);
             this.txt_email.TabIndex = 47;
             this.txt_email.Text = "E-MAIL";
             // 
@@ -229,7 +229,7 @@
             this.btn_enviar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btn_enviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_enviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_enviar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enviar.ForeColor = System.Drawing.Color.LightGray;
             this.btn_enviar.Location = new System.Drawing.Point(336, 328);
             this.btn_enviar.Name = "btn_enviar";

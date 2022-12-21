@@ -51,6 +51,7 @@
             // 
             // menu
             // 
+            this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produtosToolStripMenuItem,
             this.carrinhoToolStripMenuItem,
@@ -61,7 +62,7 @@
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menu.Size = new System.Drawing.Size(1099, 33);
+            this.menu.Size = new System.Drawing.Size(106, 514);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -69,7 +70,7 @@
             // 
             this.produtosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(100, 29);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
@@ -77,7 +78,7 @@
             // 
             this.carrinhoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.carrinhoToolStripMenuItem.Name = "carrinhoToolStripMenuItem";
-            this.carrinhoToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.carrinhoToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.carrinhoToolStripMenuItem.Text = "Carrinho";
             this.carrinhoToolStripMenuItem.Click += new System.EventHandler(this.carrinhoToolStripMenuItem_Click);
             // 
@@ -85,7 +86,7 @@
             // 
             this.loginToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
@@ -98,7 +99,7 @@
             this.administradorToolStripMenuItem.Enabled = false;
             this.administradorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(144, 29);
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(137, 29);
             this.administradorToolStripMenuItem.Text = "Administrador";
             this.administradorToolStripMenuItem.Visible = false;
             this.administradorToolStripMenuItem.Click += new System.EventHandler(this.administradorToolStripMenuItem_Click);
@@ -138,7 +139,7 @@
             this.contaToolStripMenuItem.Enabled = false;
             this.contaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.contaToolStripMenuItem.Name = "contaToolStripMenuItem";
-            this.contaToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
+            this.contaToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.contaToolStripMenuItem.Text = "Conta";
             this.contaToolStripMenuItem.Visible = false;
             // 
@@ -161,7 +162,7 @@
             this.pedidosToolStripMenuItem.Enabled = false;
             this.pedidosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(90, 29);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             this.pedidosToolStripMenuItem.Visible = false;
             this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
@@ -187,6 +188,7 @@
             // 
             // txtHora
             // 
+            this.txtHora.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHora.Name = "txtHora";
             this.txtHora.Size = new System.Drawing.Size(0, 25);
             // 
@@ -201,12 +203,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::HiveTech.Properties.Resources.HiveTech;
+            this.BackgroundImage = global::HiveTech.Properties.Resources.BACK__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1099, 544);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.statusStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menu;
             this.Name = "frmMain";

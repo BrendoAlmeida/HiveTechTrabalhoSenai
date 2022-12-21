@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCarrinho));
             this.DgvProdutos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.BtnAtualizar = new System.Windows.Forms.Button();
+            this.BtnComprar = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Img = new System.Windows.Forms.DataGridViewImageColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,9 +50,7 @@
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Adicionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Subtrair = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Remover = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.BtnAtualizar = new System.Windows.Forms.Button();
-            this.BtnComprar = new System.Windows.Forms.Button();
+            this.Remover = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,101 +73,25 @@
             this.DgvProdutos.Location = new System.Drawing.Point(-47, -25);
             this.DgvProdutos.Name = "DgvProdutos";
             this.DgvProdutos.ReadOnly = true;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            this.DgvProdutos.RowsDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            this.DgvProdutos.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DgvProdutos.RowTemplate.Height = 120;
             this.DgvProdutos.Size = new System.Drawing.Size(1090, 462);
             this.DgvProdutos.TabIndex = 1;
             this.DgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProdutos_CellContentClick);
             // 
-            // id
+            // dataGridViewImageColumn1
             // 
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // Img
-            // 
-            this.Img.HeaderText = "Img";
-            this.Img.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Img.Name = "Img";
-            this.Img.ReadOnly = true;
-            this.Img.Width = 120;
-            // 
-            // Nome
-            // 
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nome.DefaultCellStyle = dataGridViewCellStyle25;
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 200;
-            // 
-            // Descricao
-            // 
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Descricao.DefaultCellStyle = dataGridViewCellStyle26;
-            this.Descricao.HeaderText = "Descrição";
-            this.Descricao.Name = "Descricao";
-            this.Descricao.ReadOnly = true;
-            this.Descricao.Width = 200;
-            // 
-            // Quantidade
-            // 
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantidade.DefaultCellStyle = dataGridViewCellStyle27;
-            this.Quantidade.HeaderText = "Quantidade";
-            this.Quantidade.Name = "Quantidade";
-            this.Quantidade.ReadOnly = true;
-            this.Quantidade.Width = 50;
-            // 
-            // SubTotal
-            // 
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle28;
-            this.SubTotal.HeaderText = "SubTotal";
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
-            this.SubTotal.Width = 150;
-            // 
-            // Adicionar
-            // 
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Adicionar.DefaultCellStyle = dataGridViewCellStyle29;
-            this.Adicionar.HeaderText = "Adicionar";
-            this.Adicionar.Name = "Adicionar";
-            this.Adicionar.ReadOnly = true;
-            this.Adicionar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Adicionar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Subtrair
-            // 
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtrair.DefaultCellStyle = dataGridViewCellStyle30;
-            this.Subtrair.HeaderText = "Subtrair";
-            this.Subtrair.Name = "Subtrair";
-            this.Subtrair.ReadOnly = true;
-            this.Subtrair.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Subtrair.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Remover
-            // 
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Remover.DefaultCellStyle = dataGridViewCellStyle31;
-            this.Remover.HeaderText = "Remover";
-            this.Remover.Name = "Remover";
-            this.Remover.ReadOnly = true;
-            this.Remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Remover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Remover.Width = 125;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle9.NullValue")));
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::HiveTech.Properties.Resources.trash;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // BtnAtualizar
             // 
@@ -187,6 +114,98 @@
             this.BtnComprar.TabIndex = 2;
             this.BtnComprar.UseVisualStyleBackColor = true;
             this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // Img
+            // 
+            this.Img.HeaderText = "Img";
+            this.Img.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Img.Name = "Img";
+            this.Img.ReadOnly = true;
+            this.Img.Width = 120;
+            // 
+            // Nome
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nome.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 200;
+            // 
+            // Descricao
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Descricao.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Descricao.HeaderText = "Descrição";
+            this.Descricao.Name = "Descricao";
+            this.Descricao.ReadOnly = true;
+            this.Descricao.Width = 200;
+            // 
+            // Quantidade
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantidade.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Quantidade.HeaderText = "Quantidade";
+            this.Quantidade.Name = "Quantidade";
+            this.Quantidade.ReadOnly = true;
+            this.Quantidade.Width = 50;
+            // 
+            // SubTotal
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle4;
+            this.SubTotal.HeaderText = "SubTotal";
+            this.SubTotal.Name = "SubTotal";
+            this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 150;
+            // 
+            // Adicionar
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adicionar.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Adicionar.HeaderText = "Adicionar";
+            this.Adicionar.Name = "Adicionar";
+            this.Adicionar.ReadOnly = true;
+            this.Adicionar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Adicionar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Subtrair
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtrair.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Subtrair.HeaderText = "Subtrair";
+            this.Subtrair.Name = "Subtrair";
+            this.Subtrair.ReadOnly = true;
+            this.Subtrair.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Subtrair.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Remover
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle7.NullValue")));
+            this.Remover.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Remover.HeaderText = "";
+            this.Remover.Image = global::HiveTech.Properties.Resources.trash1;
+            this.Remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Remover.Name = "Remover";
+            this.Remover.ReadOnly = true;
+            this.Remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Remover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Remover.Width = 125;
             // 
             // FrmCarrinho
             // 
@@ -213,6 +232,8 @@
 
         private System.Windows.Forms.DataGridView DgvProdutos;
         private System.Windows.Forms.Button BtnComprar;
+        private System.Windows.Forms.Button BtnAtualizar;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewImageColumn Img;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
@@ -221,7 +242,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.DataGridViewButtonColumn Adicionar;
         private System.Windows.Forms.DataGridViewButtonColumn Subtrair;
-        private System.Windows.Forms.DataGridViewButtonColumn Remover;
-        private System.Windows.Forms.Button BtnAtualizar;
+        private System.Windows.Forms.DataGridViewImageColumn Remover;
     }
 }

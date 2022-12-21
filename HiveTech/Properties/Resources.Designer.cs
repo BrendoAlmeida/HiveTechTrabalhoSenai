@@ -63,6 +63,26 @@ namespace HiveTech.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BACK {
+            get {
+                object obj = ResourceManager.GetObject("BACK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BACK__1_ {
+            get {
+                object obj = ResourceManager.GetObject("BACK (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carrinho {
             get {
                 object obj = ResourceManager.GetObject("carrinho", resourceCulture);
@@ -156,6 +176,26 @@ namespace HiveTech.Properties {
         internal static System.Drawing.Bitmap Sem_título_2 {
             get {
                 object obj = ResourceManager.GetObject("Sem título-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash {
+            get {
+                object obj = ResourceManager.GetObject("trash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash1 {
+            get {
+                object obj = ResourceManager.GetObject("trash1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

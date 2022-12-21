@@ -110,3 +110,4 @@ C:\Users\quina\Documents\GitHub\HiveTechTrabalhoSenai\HiveTech\bin\Debug\System.
 C:\Users\quina\Documents\GitHub\HiveTechTrabalhoSenai\HiveTech\bin\Debug\System.Buffers.dll
 C:\Users\quina\Documents\GitHub\HiveTechTrabalhoSenai\HiveTech\bin\Debug\MySql.Data.xml
 C:\Users\quina\Documents\GitHub\HiveTechTrabalhoSenai\HiveTech\obj\Debug\HiveTech.csproj.CopyComplete
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll

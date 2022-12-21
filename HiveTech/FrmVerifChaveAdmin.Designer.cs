@@ -54,9 +54,9 @@
             // 
             // BtnLogar
             // 
-            this.BtnLogar.Location = new System.Drawing.Point(67, 55);
+            this.BtnLogar.Location = new System.Drawing.Point(30, 58);
             this.BtnLogar.Name = "BtnLogar";
-            this.BtnLogar.Size = new System.Drawing.Size(104, 23);
+            this.BtnLogar.Size = new System.Drawing.Size(176, 23);
             this.BtnLogar.TabIndex = 2;
             this.BtnLogar.Text = "Login";
             this.BtnLogar.UseVisualStyleBackColor = true;
@@ -66,10 +66,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::HiveTech.Properties.Resources.Sem_título_2;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(240, 116);
+            this.ClientSize = new System.Drawing.Size(232, 103);
             this.Controls.Add(this.BtnLogar);
             this.Controls.Add(this.txtChave);
             this.Controls.Add(this.lblChave);

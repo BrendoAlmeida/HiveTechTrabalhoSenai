@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerenciarProdutos));
             this.DgvProdutos = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Img = new System.Windows.Forms.DataGridViewImageColumn();
@@ -40,7 +41,7 @@
             this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estoque = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Alterar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Remover = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Remover = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,8 +126,11 @@
             // 
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle5.NullValue")));
             this.Remover.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Remover.HeaderText = "Remover";
+            this.Remover.HeaderText = "";
+            this.Remover.Image = global::HiveTech.Properties.Resources.trash1;
+            this.Remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.Remover.Name = "Remover";
             this.Remover.ReadOnly = true;
             this.Remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -160,6 +164,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estoque;
         private System.Windows.Forms.DataGridViewButtonColumn Alterar;
-        private System.Windows.Forms.DataGridViewButtonColumn Remover;
+        private System.Windows.Forms.DataGridViewImageColumn Remover;
     }
 }

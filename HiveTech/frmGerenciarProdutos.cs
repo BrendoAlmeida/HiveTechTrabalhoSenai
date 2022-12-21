@@ -23,7 +23,7 @@ namespace HiveTech
             foreach (Produto produto in produtos)
             {
                 string Image = produto.Imagem;
-                this.DgvProdutos.Rows.Add(produto.Id, Properties.Resources.ResourceManager.GetObject(Image.Replace("img/", "").Replace(".png", "")), produto.Nome, "R$" + produto.Preco, produto.Quantidade, "Alterar", "Remover");
+                this.DgvProdutos.Rows.Add(produto.Id, Properties.Resources.ResourceManager.GetObject(Image.Replace("img/", "").Replace(".png", "")), produto.Nome, "R$" + produto.Preco, produto.Quantidade, "Alterar");
             }
         }
 

@@ -103,7 +103,7 @@ namespace HiveTech
 
         private void criarAdiministradorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmTornarAdministrador Adm = new FrmTornarAdministrador();
+            FrmGerenciarClientes Adm = new FrmGerenciarClientes();
             Adm.MdiParent = this;
             Adm.Show();
         }
