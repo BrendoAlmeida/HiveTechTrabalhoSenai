@@ -7,3 +7,70 @@ D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.pdb
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe
 D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
+<<<<<<< Updated upstream
+=======
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmMain.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.AssemblyReference.cache
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.SuggestedBindingRedirects.cache
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmLogin.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmMain.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.Properties.Resources.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.GenerateResource.cache
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.CoreCompileInputs.cache
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.exe.config
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.exe
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\HiveTech.pdb
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\Google.Protobuf.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\MySql.Data.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\System.Memory.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\ZstdNet.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\System.Buffers.dll
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\bin\Debug\MySql.Data.xml
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.exe.config
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.CopyComplete
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmCarrinho.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmCarrinho.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FormCadastro.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FormProduto.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FormCadastro.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FormProduto.resources
+D:\BRENDO ALMEIDA\HiveTech\DeskHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmAdministrador.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.frmGerenciarProdutos.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmAlterarProduto.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmGerenciarClientes.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmTornarAdministrador.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmAlterarCadastro.resources
+C:\Users\brend\OneDrive\Área de Trabalho\TrabHiveTech\HiveTech\HiveTech\obj\Debug\HiveTech.FrmPedidos.resources
+D:\leticia\HiveTech\HiveTech\bin\Debug\HiveTech.exe.config
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.exe
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.pdb
+D:\leticia\HiveTech\HiveTech\bin\Debug\HiveTech.exe
+D:\leticia\HiveTech\HiveTech\bin\Debug\HiveTech.pdb
+D:\leticia\HiveTech\HiveTech\bin\Debug\System.Memory.dll
+D:\leticia\HiveTech\HiveTech\bin\Debug\System.Numerics.Vectors.dll
+D:\leticia\HiveTech\HiveTech\bin\Debug\System.Buffers.dll
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.csprojResolveAssemblyReference.cache
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FormCadastro.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FormProduto.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmAlterarCadastro.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmAlterarProduto.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmCarrinho.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmGerenciarClientes.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.frmGerenciarProdutos.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmLogin.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.frmMain.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmPedidos.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmProduto.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.FrmTornarAdministrador.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.Properties.Resources.resources
+D:\leticia\HiveTech\HiveTech\obj\Debug\HiveTech.csproj.GenerateResource.Cache
+>>>>>>> Stashed changes

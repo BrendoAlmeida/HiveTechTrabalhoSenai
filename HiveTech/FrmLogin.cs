@@ -39,5 +39,15 @@ namespace HiveTech
                 this.Hide();
             }
         }
+
+        private void lineShape1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
