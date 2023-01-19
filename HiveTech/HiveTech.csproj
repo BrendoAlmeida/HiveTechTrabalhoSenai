@@ -151,6 +151,7 @@
     <Compile Include="ItensCarrinho.cs" />
     <Compile Include="LoginInfo.cs" />
     <Compile Include="PedidoDAO.cs" />
+    <Compile Include="ServerInfo.cs" />
     <Compile Include="VendaClass.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>

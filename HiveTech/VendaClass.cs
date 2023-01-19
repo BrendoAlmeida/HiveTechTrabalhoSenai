@@ -17,14 +17,11 @@ namespace HiveTech
         public decimal Total { get; set; }
     }
 
-    public class VendaDAO
+    public class VendaDAO : ServerInfo
     {
-        private MySqlConnection conexao;
-
         public VendaDAO()
         {
-            conexao = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
-            conexao.Open();
+            base.StartServer();
         }
 
         public void Inserir(Venda venda)

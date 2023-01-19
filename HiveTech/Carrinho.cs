@@ -91,8 +91,11 @@ namespace HiveTech
         public static void Comprar(string UserId)
         {
             MySqlCommand comando = new MySqlCommand();
-            comando.Connection = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
-            comando.Connection.Open();
+
+            ServerInfo Server = new ServerInfo();
+            Server.StartServer();
+
+            comando.Connection = Server.conexao;
             comando.CommandText = "INSERT INTO pedidos (id_cliente, date_time_pedido) VALUES (@id_cliente, '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')";
             comando.Parameters.AddWithValue("@id_cliente", UserId);
             comando.ExecuteNonQuery();

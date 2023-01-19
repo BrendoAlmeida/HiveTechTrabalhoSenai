@@ -7,14 +7,11 @@ using MySql.Data.MySqlClient;
 
 namespace HiveTech
 {
-    public class ClienteDAO
+    public class ClienteDAO : ServerInfo
     {
-        public MySqlConnection conexao { get; set; }
-
         public ClienteDAO()
         {
-            conexao = new MySqlConnection("Server=26.196.221.145;Database=hivetechdb;Uid=sa;Pwd=123456;");
-            conexao.Open();
+            base.StartServer();
         }
 
         internal void Inserir(Cliente cliente)

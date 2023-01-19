@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace HiveTech
 {
-    internal class PedidoDAO
+    internal class PedidoDAO : ServerInfo
     {
-        public MySqlConnection conexao { get; set; }
-
         public PedidoDAO()
         {
-            conexao = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
-            conexao.Open();
+            base.StartServer();
         }
 
         public List<ItensCarrinho> ListarPedidos(int IdCliente)

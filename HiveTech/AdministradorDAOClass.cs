@@ -7,14 +7,11 @@ using MySql.Data.MySqlClient;
 
 namespace HiveTech
 {
-    public class AdministradorDAO 
+    public class AdministradorDAO : ServerInfo
     {
-        public MySqlConnection conexao { get; set; }
-
         public AdministradorDAO()
         {
-            conexao = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
-            conexao.Open();
+            base.StartServer();
         }
 
         internal void Alterar(Administrador administrador)

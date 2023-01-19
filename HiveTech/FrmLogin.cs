@@ -20,16 +20,17 @@ namespace HiveTech
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection("Server=26.196.221.145;Database=HiveTechDB;Uid=sa;Pwd=123456;");
+            ServerInfo Server = new ServerInfo();
+            Server.StartServer();
+            MySqlConnection conexao = Server.conexao;
+
             MySqlCommand sql = new MySqlCommand
             {
-                Connection = conn,
+                Connection = conexao,
                 CommandText = @"SELECT * FROM cliente where email = @email and senha = SHA2( @senha , 256)"
             };
             sql.Parameters.AddWithValue("@email", txtEmail.Text);
             sql.Parameters.AddWithValue("@senha", txtSenha.Text);
-
-            conn.Open();
 
             MySqlDataReader Reader = sql.ExecuteReader();
 
@@ -59,7 +60,7 @@ namespace HiveTech
                 MessageBox.Show("Usuário não encontrado!");
             }
             Reader.Close();
-            conn.Close();
+            conexao.Close();
         }
 
         private void lblCriarConta_Click(object sender, EventArgs e)

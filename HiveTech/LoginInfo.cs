@@ -10,6 +10,7 @@ namespace HiveTech
     {
         //public static Cliente cliente { get; set; }
         public static string Id { get; set; }
+        
         public static bool IsLogin { get; set; }
 
         public static string Nome { get; set; }

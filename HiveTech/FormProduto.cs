@@ -17,7 +17,6 @@ namespace HiveTech
             InitializeComponent();
         }
 
-
         private void btnCadastrar_Click_1(object sender, EventArgs e)
         {
             Produto produto = new Produto(0, txtDescricao.Text, Decimal.Parse(txtPreco.Text), txtLink.Text, int.Parse(txtPreco.Text));
